@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Log-in</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Log in to Spotify</h1>
+        </div>
+        <div class="alternative">
+            <button class="btn">
+                <img src="Google.jpg" id="Google">
+                <span>Continue with Google</span>
+            </button>
+            <button class="btn">
+                <img src="facebook1.jpg" id="Facebook1">
+                <span>Continue with Facebook</span>
+            </button>
+            <button class="btn">
+                <img src="apple.jpg" id="Apple">
+                <span>Continue with Apple</span>
+            </button>
+        </div>
+        <form class="login-form">
+            <div class="form">
+                <label for="email">Email or username</label>
+                <input type="email" name="email" id="email" placeholder="Email or username">
+            </div>
+            <div class="form">
+                <label for="password">Password</label>
+                <input type="password" name="password"  id="password" placeholder="Password">
+            </div>
+            <div class="remember">
+                <input type="checkbox">
+                <label for="remember">Remember me</label>
+            </div>
+        </form>
+        <div class="log-in">
+            <button class="button"onclick="login()" id="loginBTN">Log in</button>
+            <p id="errore" style="color:red;"></p>
+            <a href="" class="button">Forgot your password?</a>
+        </div>
+        <div class="footer">
+            <p>Don't have an account?</p>
+            <a href="">Sign up for Spotify</a>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+<style>
+    body,
+    html {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        background-color: black;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .title {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+    .title h1 {
+        color: white;
+        margin-top: 13%;
+    }
+
+    .alternative button {
+        margin-top: 2%;
+        padding: 1%;
+        margin-left: 20%;
+        margin-right: 20%;
+        white-space: nowrap;
+        border-radius: 30px;
+        color: white;
+        background-color: black;
+        font-weight: bold;
+        width: 80%;
+        border-width: 3px;
+    }
+
+    .alternative #Google {
+        width: 12%;
+        height: 12%;
+
+    }
+
+    .alternative #Facebook1 {
+        max-width: 13%;
+        max-height: 13%;
+
+    }
+
+    .alternative #Apple {
+        height: 12%;
+        width: 12%;
+    }
+
+    .alternative {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        justify-items: center;
+        align-items: center;
+        margin-top: 5%;
+    }
+
+    .btn {
+        display: flex;
+        align-items: center;
+        gap: 14%;
+    }
+
+    .login-form {
+        margin-top: 15%;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form label {
+        color: white;
+        margin-bottom: 2%;
+        font-size:small;
+    }
+    .form{
+        display: flex;
+        flex-direction: column;
+        gap: 10%;
+    }
+    .form input{
+        padding: 4%;
+        background-color: black;
+        color: white;
+        margin-bottom: 6%;
+    }
+    .remember{
+        display: flex;
+        align-items: center;
+        gap: 2%;
+    }
+    .remember label{
+        color: white;
+        font-size: small;
+    }
+    .log-in{
+        margin-top: 7%;
+        width: 100%;
+        text-align: center;
+    }
+    .log-in button{
+        background-color: rgb(29, 185, 84);
+        border-radius: 20px;
+        width: 70%;
+        padding: 2%;
+    }
+    .log-in a{
+        color: white;
+    }
+    .footer a{
+        color: white;
+        font-size: small;
+    }
+    .footer p{
+        color: gray;
+    }
+    .footer{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        align-items: center;
+        gap:3px;
+        margin-top:10%;
+    }
+
+
+
+
+
+</style>
+
+<script>
+
+    const btn=document.getElementById("loginBTN");
+    btn.addEventListener("click", login);
+
+
+
+
+
+    function login() {
+        const email= document.getElementById("email").value;
+        const password= document.getElementById("password").value;
+
+        const emailCorretta="morizciancio@gmail.com"
+        const passwordCorretta="moriz"
+
+        if(email==emailCorretta && password==passwordCorretta) {
+            window.location.href="app.html";
+        }
+        else{
+
+            document.getElementById("errore").innerHTML= "Email o password non corretti";
+
+        }
+    }
+</script>
