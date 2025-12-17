@@ -67,6 +67,9 @@
         <div class="song-control">
             <button id="btn" onclick="togglePlay()">▶</button>
         </div>
+        <div class="progress-container">
+            <div class="progress"></div>
+        </div>
     </div>
 
 </div>
@@ -185,6 +188,24 @@ body, html {
     color: white;
     cursor: pointer;
 }
+.progress-container {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    right: 16px;
+    height: 4px;
+    background: #404040;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.progress {
+    height: 100%;
+    width: 0%;
+    background: white;
+    border-radius: 2px;
+}
+
 </style>
 
 <script>
@@ -233,4 +254,22 @@ function togglePlay() {
         btn.innerText = "▶";
     }
 }
+
+const progress = document.querySelector(".progress");
+const progressContainer = document.querySelector(".progress-container");
+
+
+play_song.addEventListener("timeupdate", () => {
+    const percent = (play_song.currentTime / play_song.duration) * 100;
+    progress.style.width = percent + "%";
+});
+
+progressContainer.addEventListener("click", (e) => {
+    const width = progressContainer.clientWidth;
+    const clickX = e.offsetX;
+    const duration = play_song.duration;
+
+    play_song.currentTime = (clickX / width) * duration;
+});
 </script>
+
