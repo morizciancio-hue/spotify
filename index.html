@@ -8,135 +8,223 @@
 </head>
 
 <body>
-    <div class="container">
+
+    <div id="splash-screen">
+        <div class="logo-container">
+            <img src="spotify-bianco.jpg" alt="Logo" class="splash-logo">
+        </div>
+    </div>
+    <div class="container" style="display: none;">
         <div class="top-zone">
             <div class="logo">
                 <img src="spotify-bianco.jpg" id="image">
             </div>
             <div class="title">
-                <h2>Milions of songs.<br>Free on Spotify.</h2>
+                <h1>Milions of songs.<br>Free on Spotify.</h1>
             </div>
         </div>
         <div class="Sign-in">
-            <button id="green">Sign up free</button>
-            <button><img src="Google.jpg" id="Google">Continue with Google</button>
-            <button><img src="facebook1.jpg" id="Facebook">Continue with Facebook</button>
-            <button><img src="apple.jpg" id="Apple">Continue with Apple</button>
+            <button id="green">
+                <span>Sign up free</span>
+            </button>
+            <button class="btn">
+                <img src="Google.jpg" id="Google">
+                <span>Continue with Google</span>
+            </button>
+            <button class="btn">
+                <img src="facebook1.jpg" id="Facebook1">
+                <span>Continue with Facebook</span>
+            </button>
+            <button class="btn">
+                <img src="apple.jpg" id="Apple">
+                <span>Continue with Apple</span>
+            </button>
         </div>
         <div class="Log-in">
             <a href="accesso.html">Log in</a>
         </div>
-
-
-
-
-
-
     </div>
 </body>
 
 </html>
-
-
-
-
-
 <style>
-   
+    body,
+    html {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: black;
+        font-family: 'Montserrat', sans-serif;
+        overflow: hidden;
+    }
+
+    .logo img {
+        height: 15%;
+        width: 28%;
+    }
+
+    .Sign-in #Google {
+        width: 12%;
+        height: 12%;
+
+    }
+
+    .Sign-in #Facebook1 {
+        max-width: 13%;
+        max-height: 13%;
+    }
+
+    .Sign-in #Apple {
+        height: 12%;
+        width: 12%;
+    }
+
+    .container #image {
+        position: absolute;
+        left: 35%;
+        top: 11%;
+    }
+
+    .container h1 {
+        color: white;
+        text-align: center;
+    }
+
+    .title {
+        margin-top: 15em;
+        margin-bottom: 5em;
+    }
+
+    .container {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
 
-        body,
-        html {
-            height: 100%;
-            margin: 0;
-            background-color: black;
-        }
 
-        .logo  img {
-            height: 14%;
-            width: 28%;
-
-        }
-        .Sign-in #Google{
-            height: 5%;
-            width: 10%;
-            position: absolute;
-            left: 17%;
-            top: 71%;
-        }
-            .Sign-in #Facebook{
-            height: 6%;
-            width: 11%;
-            position: absolute;
-            left: 17%;
-            top: 79%;
-        }
-            .Sign-in #Apple{
-            height: 5%;
-            width: 10%;
-            position: absolute;
-            left: 17%;
-            top: 88%;
-        }
-
-        .container #image {
-            position: absolute;
-            left: 35%;
-            top: 15%;
-            
-        }
-
-        .container h2 {
-            color: white;
-            text-align: center;
-        }
-
-        .title {
-            margin-top: 22em;
-        }
-
-        .container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-        }
-
-        .Sign-in {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-        }
-        .Sign-in #green {
-            background-color: rgb(29, 185, 84);
-            color: black;
-        }
+    .Sign-in {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        margin-top: 5%;
+    }
 
 
-        .Sign-in button {
-            margin-top: 2%;
-            padding: 4%;
-            margin-left: 15%;
-            margin-right: 15%;
-            white-space: nowrap;
-            border-radius: 30px;
-            color: white;
-            background-color: black;
-            font-weight: bold;
+
+    .Sign-in #green {
+        background-color: rgb(29, 185, 84);
+        color: black;
+        margin-top: 2%;
+        padding: 4%;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    .btn {
+        display: flex;
+        align-items: center;
+        gap: 14%;
+    }
+
+
+    .Sign-in button {
+        margin-top: 2%;
+        padding: 2%;
+        margin-left: 20%;
+        margin-right: 20%;
+        white-space: nowrap;
+        border-radius: 30px;
+        color: white;
+        background-color: black;
+        font-weight: bold;
+        width: 80%;
+    }
+
+
+
+    .Log-in {
+        margin-top: 6%;
+        text-align: center;
+    }
+
+
+
+    .Log-in a {
+        color: white;
+        background-color: black;
+        font-size: 1em;
+        border: none;
+        font-weight: bold;
+        text-decoration: none;
+        align-items: center;
+    }
+
+
+
+    #splash-screen {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+        transition: opacity 0.5s ease-out;
+    }
+
+
+
+    .splash-logo {
+        width: 150px;
+        animation: pulse 1.5s infinite ease-in-out;
+    }
+
+
+
+    @keyframes pulse {
+        0% {
+            transform: scale(0.9);
+            opacity: 0.7;
         }
-        .Log-in {
-            margin-top: 6%;
+
+        50% {
+            transform: scale(1);
+            opacity: 1;
         }
-        .Log-in a{
-            color:white;
-            background-color: black;
-            font-size: 1em;
-            border: none;
-            font-weight: bold;
-            text-decoration: none;
+
+        100% {
+            transform: scale(0.9);
+            opacity: 0.7;
         }
-      
-    
+    }
+    .fade-out {
+        opacity: 0;
+        pointer-events: none;
+    }
 </style>
 
+
+
+<script>
+
+    window.addEventListener('load', () => {
+        const splash = document.getElementById('splash-screen');
+        const container = document.querySelector('.container');
+        setTimeout(() => {
+            splash.classList.add('fade-out');
+            container.style.display = 'block';
+            setTimeout(() => {
+                splash.remove();
+            }, 500);
+        }, 3000);
+    });
+</script>
