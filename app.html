@@ -1,275 +1,412 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <title>Spotify</title>
 </head>
 
 <body>
-<div class="container">
+    <div class="container">
 
-    <div class="top-zone">
-        <button class="btn-icon">M</button>
-        <button class="btn">Tutti</button>
-        <button class="btn">Wrapped</button>
-        <button class="btn">Musica</button>
-        <button class="btn">Podcast</button>
-    </div>
+        <div class="top-zone">
+            <button class="btn-icon">M</button>
+            <button class="btn">Tutti</button>
+            <button class="btn">Wrapped</button>
+            <button class="btn">Musica</button>
+            <button class="btn">Podcast</button>
+        </div>
 
-    <div class="text">
-        <h2>Inizia ad ascoltare</h2>
-    </div>
+        <div class="text">
+            <h2>Inizia ad ascoltare</h2>
+        </div>
 
-    <div class="song-item" onclick="playBuio()">
-        <img src="buio-davanti.jpg" class="song-cover">
-        <div class="song-info">
-            <span class="song-title">Buio Davanti</span>
-            <span class="song-artist">Lazza</span>
-        </div>
-        <div class="song-options">
-            <button>⋮</button>
-        </div>
-    </div>
-
-    
-    <div class="song-item" onclick="playKabuki()">
-        <img src="kabuki.jpg" class="song-cover">
-        <div class="song-info">
-            <span class="song-title">Kabuki</span>
-            <span class="song-artist">Kid Yugi</span>
-        </div>
-        <div class="song-options">
-            <button>⋮</button>
-        </div>
-    </div>
-
-    <div class="song-item" onclick="playFellini()">
-        <img src="Fellini.jpg" class="song-cover">
-        <div class="song-info">
-            <span class="song-title">Fellini</span>
-            <span class="song-artist">Ernia ft. Kid Yugi</span>
-        </div>
-        <div class="song-options">
-            <button>⋮</button>
-        </div>
-    </div>
-
-  
-    <div class="song-bar" id="Song-Bar" style="display:none;">
-        <div class="song-left">
-            <img id="song-img">
-            <div>
-                <div id="song-title"></div>
-                <div id="song-artist"></div>
+        <div class="song-item" onclick="playBuio()">
+            <img src="buio-davanti.jpg" class="song-cover">
+            <div class="song-info">
+                <span class="song-title">Buio Davanti</span>
+                <span class="song-artist">Lazza</span>
+            </div>
+            <div class="song-options">
+                <button>⋮</button>
             </div>
         </div>
-        <div class="song-control">
-            <button id="btn" onclick="togglePlay()">▶</button>
+
+
+        <div class="song-item" onclick="playKabuki()">
+            <img src="kabuki.jpg" class="song-cover">
+            <div class="song-info">
+                <span class="song-title">Kabuki</span>
+                <span class="song-artist">Kid Yugi</span>
+            </div>
+            <div class="song-options">
+                <button>⋮</button>
+            </div>
         </div>
-        <div class="progress-container">
-            <div class="progress"></div>
+
+        <div class="song-item" onclick="playFellini()">
+            <img src="Fellini.jpg" class="song-cover">
+            <div class="song-info">
+                <span class="song-title">Fellini</span>
+                <span class="song-artist">Ernia ft. Kid Yugi</span>
+            </div>
+            <div class="song-options">
+                <button>⋮</button>
+            </div>
         </div>
+
+        <div class="album-text">
+            <h2>Creato per Moriz Ciancio</h2>
+        </div>
+
+        <div class="orizzontal-bar">
+            <a href="tutta-vita.html" class="album-item">
+        <img src="tutta-vita.jpg" class="album-cover">
+        <div class="album-info">
+            <span class="album-title">Olly,</span>
+            <span class="album-name">Tutta Vita</span>
+        </div>
+    </a>
+
+            <div class="album-item">
+                <img src="kabuki.jpg" class="album-cover">
+                <div class="album-info">
+                    <span class="album-title">Kabuki</span>
+                    <span class="album-name">Kid Yugi</span>
+                </div>
+            </div>
+
+            <div class="album-item">
+                <img src="kabuki.jpg" class="album-cover">
+                <div class="album-info">
+                    <span class="album-title">Kabuki</span>
+                    <span class="album-name">Kid Yugi</span>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="song-bar" id="Song-Bar" style="display:none;">
+            <div class="song-left">
+                <img id="song-img">
+                <div>
+                    <div id="song-title"></div>
+                    <div id="song-artist"></div>
+                </div>
+            </div>
+            <div class="song-control">
+                <button id="btn" onclick="togglePlay()">▶</button>
+            </div>
+            <div class="progress-container">
+                <div class="progress"></div>
+            </div>
+        </div>
+        <div class="footer">
+            <button class="option">
+                <i class="fa-regular fa-house"></i>
+                <span>Home</span>
+            </button>
+            <button class="option">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <span>Cerca</span>
+            </button>
+            <button class="option">
+                <i class="fas fa-layer-group"></i>
+                <span>La tua libreria</span>
+            </button>
+            <button class="option">
+                <i class="fa-brands fa-spotify"></i>
+                <span>Premium</span>
+            </button>
+            <button class="option">
+                <i class="fa-solid fa-plus"></i>
+                <span>Crea</span>
+            </button>
+        </div>
+
     </div>
 
-</div>
-
-<audio id="play-song"></audio>
+    <audio id="play-song"></audio>
 
 </body>
+
 </html>
 
 <style>
-body, html {
-    width: 100%;
-    margin: 0;
-    background-color: black;
-    margin-bottom: 80px;
-}
+    body,
+    html {
+        width: 100%;
+        height: 200%;
+        margin: 0;
+        background-color: black;
+        margin-bottom: 80px;
+        font-family: 'Montserrat', sans-serif;
 
-.top-zone {
-    display: flex;
-    gap: 1%;
-}
 
-.btn {
-    margin-top: 2%;
-    margin-left: 1%;
-    border-radius: 20px;
-    color: white;
-    padding: 2% 5%;
-    background-color: rgb(70, 70, 70);
-    border: none;
-}
+    }
 
-.btn-icon {
-    margin-top: 2%;
-    margin-left: 1%;
-    padding: 2%;
-    border-radius: 50%;
-    background-color: rgb(250, 175, 250);
-}
+    .top-zone {
+        display: flex;
+        gap: 1%;
+    }
 
-.text {
-    margin-left: 1%;
-    color: white;
-}
+    .btn {
+        margin-top: 2%;
+        margin-left: 1%;
+        border-radius: 20px;
+        color: white;
+        padding: 2% 5%;
+        background-color: rgb(70, 70, 70);
+        border: none;
+    }
 
-.song-item {
-    display: flex;
-    align-items: center;
-    padding: 10px 16px;
-    gap: 12px;
-    cursor: pointer;
-}
+    .btn-icon {
+        margin-top: 2%;
+        margin-left: 1%;
+        padding: 2%;
+        border-radius: 50%;
+        background-color: rgb(250, 175, 250);
+    }
 
-.song-cover {
-    width: 48px;
-    height: 48px;
-    border-radius: 4px;
-    object-fit: cover;
-}
+    .text {
+        margin-left: 1%;
+        color: white;
+    }
 
-.song-info {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-}
+    .song-item {
+        display: flex;
+        align-items: center;
+        padding: 10px 16px;
+        gap: 12px;
+        cursor: pointer;
+    }
 
-.song-title {
-    color: white;
-    font-size: 14px;
-}
+    .song-cover {
+        width: 48px;
+        height: 48px;
+        border-radius: 4px;
+        object-fit: cover;
+    }
 
-.song-artist {
-    color: #b3b3b3;
-    font-size: 12px;
-}
+    .song-info {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
 
-.song-options button {
-    color: rgb(70, 70, 70);
-    background: black;
-    font-size: xx-large;
-    border: none;
-}
+    .song-title {
+        color: white;
+        font-size: 14px;
+    }
 
-.song-bar {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 80px;
-    background-color: #181818;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 16px;
-    border-top: 1px solid #282828;
-}
+    .song-artist {
+        color: #b3b3b3;
+        font-size: 12px;
+    }
 
-.song-left {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    color: white;
-    font-size: small;
-}
+    .song-options button {
+        color: rgb(70, 70, 70);
+        background: black;
+        font-size: xx-large;
+        border: none;
+    }
 
-.song-left img {
-    width: 48px;
-    height: 48px;
-    border-radius: 4px;
-}
+    .song-bar {
+        position: fixed;
+        bottom: 64px;
+        left: 0;
+        right: 0;
+        height: 80px;
+        background-color: #181818;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 16px;
+        border-top: 1px solid #282828;
+    }
 
-.song-control button {
-    font-size: 22px;
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-}
-.progress-container {
-    position: absolute;
-    bottom: 8px;
-    left: 16px;
-    right: 16px;
-    height: 4px;
-    background: #404040;
-    border-radius: 2px;
-    cursor: pointer;
-}
+    .song-left {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        color: white;
+        font-size: small;
+    }
 
-.progress {
-    height: 100%;
-    width: 0%;
-    background: white;
-    border-radius: 2px;
-}
+    .song-left img {
+        width: 48px;
+        height: 48px;
+        border-radius: 4px;
+    }
+
+    .song-control button {
+        font-size: 22px;
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+    }
+
+    .progress-container {
+        position: absolute;
+        bottom: 8px;
+        left: 16px;
+        right: 16px;
+        height: 4px;
+        background: #404040;
+        border-radius: 2px;
+        cursor: pointer;
+    }
+
+    .progress {
+        height: 100%;
+        width: 0%;
+        background: white;
+        border-radius: 2px;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .option {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        text-align: center;
+    }
+
+    .option i {
+        color: white;
+        font-size: 20px;
+
+    }
+
+    .option {
+        border: none;
+        background-color: transparent;
+        color: white;
+        margin-left: 1%;
+        margin-bottom: 2%;
+        white-space: nowrap;
+        gap: 5px;
+    }
+
+    .album-item{
+        display: flex;
+        flex-direction: column;
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    
+    .album-text {
+        margin-top: 3%;
+        color: white;
+        margin-left: 3%;
+    }
+
+    .orizzontal-bar {
+        display: flex;
+        flex-direction: row;
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+        gap: 15px;
+        padding: 10px;
+        scrollbar-width: none;
+    }
+
+    .orizzontal-bar::-webkit-scrollbar {
+        display: none;
+    }
+    .album-cover{
+        margin-bottom: 3%;
+        width: 10em;
+    }
+    .album-title {
+        color: white;
+    }
+    .album-name{
+        color: #b3b3b3;
+    }
 
 </style>
 
 <script>
-const play_song = document.getElementById("play-song");
-const btn = document.getElementById("btn");
+    const play_song = document.getElementById("play-song");
+    const btn = document.getElementById("btn");
 
-function playBuio() {
-    document.getElementById("Song-Bar").style.display = "flex";
-    document.getElementById("song-img").src = "buio-davanti.jpg";
-    document.getElementById("song-title").innerText = "Buio Davanti";
-    document.getElementById("song-artist").innerText = "Lazza";
+    function playBuio() {
+        document.getElementById("Song-Bar").style.display = "flex";
+        document.getElementById("song-img").src = "buio-davanti.jpg";
+        document.getElementById("song-title").innerText = "Buio Davanti";
+        document.getElementById("song-artist").innerText = "Lazza";
 
-    play_song.src = "Lazza - BUIO DAVANTI (Visual).mp3";
-    play_song.play();
-    btn.innerText = "⏸";
-}
-
-function playKabuki() {
-    document.getElementById("Song-Bar").style.display = "flex";
-    document.getElementById("song-img").src = "kabuki.jpg";
-    document.getElementById("song-title").innerText = "Kabuki";
-    document.getElementById("song-artist").innerText = "Kid Yugi";
-
-    play_song.src = "Kabuki.mp3";
-    play_song.play();
-    btn.innerText = "⏸";
-}
-
-function playFellini() {
-    document.getElementById("Song-Bar").style.display = "flex";
-    document.getElementById("song-img").src = "Fellini.jpg";
-    document.getElementById("song-title").innerText = "Fellini";
-    document.getElementById("song-artist").innerText = "Ernia ft. Kid Yugi";
-
-    play_song.src = "Ernia, Kid Yugi - FELLINI (Visual).mp3";
-    play_song.play();
-    btn.innerText = "⏸";
-}
-
-function togglePlay() {
-    if (play_song.paused) {
+        play_song.src = "Lazza - BUIO DAVANTI (Visual).mp3";
         play_song.play();
         btn.innerText = "⏸";
-    } else {
-        play_song.pause();
-        btn.innerText = "▶";
     }
-}
 
-const progress = document.querySelector(".progress");
-const progressContainer = document.querySelector(".progress-container");
+    function playKabuki() {
+        document.getElementById("Song-Bar").style.display = "flex";
+        document.getElementById("song-img").src = "kabuki.jpg";
+        document.getElementById("song-title").innerText = "Kabuki";
+        document.getElementById("song-artist").innerText = "Kid Yugi";
+
+        play_song.src = "Kabuki.mp3";
+        play_song.play();
+        btn.innerText = "⏸";
+    }
+
+    function playFellini() {
+        document.getElementById("Song-Bar").style.display = "flex";
+        document.getElementById("song-img").src = "Fellini.jpg";
+        document.getElementById("song-title").innerText = "Fellini";
+        document.getElementById("song-artist").innerText = "Ernia ft. Kid Yugi";
+
+        play_song.src = "Ernia, Kid Yugi - FELLINI (Visual).mp3";
+        play_song.play();
+        btn.innerText = "⏸";
+    }
+
+    function togglePlay() {
+        if (play_song.paused) {
+            play_song.play();
+            btn.innerText = "⏸";
+        } else {
+            play_song.pause();
+            btn.innerText = "▶";
+        }
+    }
+
+    const progress = document.querySelector(".progress");
+    const progressContainer = document.querySelector(".progress-container");
 
 
-play_song.addEventListener("timeupdate", () => {
-    const percent = (play_song.currentTime / play_song.duration) * 100;
-    progress.style.width = percent + "%";
-});
+    play_song.addEventListener("timeupdate", () => {
+        const percent = (play_song.currentTime / play_song.duration) * 100;
+        progress.style.width = percent + "%";
+    });
 
-progressContainer.addEventListener("click", (e) => {
-    const width = progressContainer.clientWidth;
-    const clickX = e.offsetX;
-    const duration = play_song.duration;
+    progressContainer.addEventListener("click", (e) => {
+        const width = progressContainer.clientWidth;
+        const clickX = e.offsetX;
+        const duration = play_song.duration;
 
-    play_song.currentTime = (clickX / width) * duration;
-});
+        play_song.currentTime = (clickX / width) * duration;
+    });
 </script>
-
