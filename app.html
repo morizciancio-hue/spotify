@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <title>Spotify</title>
 </head>
 
@@ -24,7 +24,7 @@
         </div>
 
         <div class="song-item" onclick="playBuio()">
-            <img src="buio-davanti.jpg" class="song-cover">
+            <img src="buio-davanti1.jpg" class="song-cover">
             <div class="song-info">
                 <span class="song-title">Buio Davanti</span>
                 <span class="song-artist">Lazza</span>
@@ -62,30 +62,91 @@
         </div>
 
         <div class="orizzontal-bar">
-            <a href="tutta-vita.html" class="album-item">
-        <img src="tutta-vita.jpg" class="album-cover">
-        <div class="album-info">
-            <span class="album-title">Olly,</span>
-            <span class="album-name">Tutta Vita</span>
+            <a href="TuttaVita.html" class="item">
+        <img src="tutta-vita.jpg" class="cover">
+        <div class="info">
+            <span class="title">Tutta Vita,</span>
+            <span class="name">Olly</span>
         </div>
     </a>
 
-            <div class="album-item">
-                <img src="kabuki.jpg" class="album-cover">
-                <div class="album-info">
-                    <span class="album-title">Kabuki</span>
-                    <span class="album-name">Kid Yugi</span>
+            <div class="item">
+                <img src="anima-nera.jpeg" class="cover">
+                <div class="info">
+                    <span class="title">Anima Nera</span>
+                    <span class="name">Il Tre</span>
                 </div>
             </div>
 
-            <div class="album-item">
-                <img src="kabuki.jpg" class="album-cover">
-                <div class="album-info">
-                    <span class="album-title">Kabuki</span>
-                    <span class="album-name">Kid Yugi</span>
+            <div class="item">
+                <img src="locura.jpg" class="cover">
+                <div class="info">
+                    <span class="title">Locura,</span>
+                    <span class="name">Lazza</span>
                 </div>
             </div>
         </div>
+
+        <div class="album-text">
+            <h2>Stazioni radio più popolari</h2>
+        </div>
+
+
+        <div class="orizzontal-bar">
+            <a href="tutta-vita.html" class="item">
+        <img src="stazione-radio2.jpeg" class="cover">
+        <div class="info">
+            <span class="title">Bad Bunny, Daddy Y..,<br></span>
+            <span class="name">Anuel AA, Arcàngel,...</span>
+        </div>
+    </a>
+
+            <div class="item">
+                <img src="stazione-radio4.jpeg" class="cover">
+                <div class="info">
+                    <span class="title">The Weekend, Ariana<br></span>
+                    <span class="name">Grande,Future,Doja..</span>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="stazione-radio3.jpeg" class="cover">
+                <div class="info">
+                    <span class="title">Bruno Mars, Coldplay..<br></span>
+                    <span class="name">Ed Sheeran, Maroon5..</span>
+                </div>
+            </div>
+        </div>
+
+
+         <div class="album-text">
+            <h2>Artisti più popolari</h2>
+        </div>
+
+
+         <div class="orizzontal-bar">
+            <a href="tutta-vita.html" class="item">
+        <img src="Olly.jpg" class="cover-circle">
+        <div class="info">
+            <span class="name">Olly</span>
+        </div>
+    </a>
+
+            <div class="item">
+                <img src="Il-Tre.jpg" class="cover-circle">
+                <div class="info">
+                    <span class="name">Il Tre</span>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="Lazza.jpg" class="cover-circle">
+                <div class="info">
+                    <span class="name">Lazza</span>
+                </div>
+            </div>
+        </div>
+
 
 
 
@@ -107,7 +168,7 @@
         </div>
         <div class="footer">
             <button class="option">
-                <i class="fa-regular fa-house"></i>
+                <i class="fa-solid fa-home"></i>
                 <span>Home</span>
             </button>
             <button class="option">
@@ -140,7 +201,7 @@
     body,
     html {
         width: 100%;
-        height: 200%;
+        height: 130%;
         margin: 0;
         background-color: black;
         margin-bottom: 80px;
@@ -333,15 +394,26 @@
     .orizzontal-bar::-webkit-scrollbar {
         display: none;
     }
-    .album-cover{
+    .cover{
         margin-bottom: 3%;
         width: 10em;
     }
-    .album-title {
+     .cover-circle{
+        margin-bottom: 3%;
+        width: 10em;
+        height: 10em;
+        border-radius: 50%;
+        object-fit: cover
+    }
+    .title {
         color: white;
     }
-    .album-name{
+    .name{
         color: #b3b3b3;
+    }
+
+    .orizzontal-bar .item{
+        text-align: center;
     }
 
 </style>
