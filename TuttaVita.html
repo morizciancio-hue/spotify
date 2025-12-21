@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Tutta Vita</title>
+</head>
+
+<body>
+    <div class="conatiner">
+        <div class="image">
+            <img src="tutta-vita.jpg" class="img">
+            <div class="album-details">
+                <div class="title">
+                    <span>TUTTA VITA</span>
+                </div>
+                <div class="artist">
+                    <img src="Olly.jpg">
+                    <img src="juli.jpg">
+                    <h5>Olly°Juli</h5>
+                </div>
+                <div class="description">
+                    <h5>Album * 25 ott 2024</h5>
+                </div>
+            </div>
+
+            <div class="option">
+                <div class="left-option">
+                    <button><i class="fa-solid fa-circle-plus"></i></button>
+                    <button><i class="fa-solid fa-circle-down"></i></button>
+                    <button><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                </div>
+                <div class="right-option">
+                    <button><i class="fa-solid fa-shuffle"></i></button>
+                    <button ><i class="fa-solid fa-circle-play" id="special-button"></i></button>
+                </div>
+            </div>
+        </div>
+
+         <div class="song-item" onclick="playEFesta()">
+            <img src="tutta-vita.jpg" class="song-cover">
+            <div class="song-info">
+                <span class="song-title">E festa</span>
+                <span class="song-artist">Olly</span>
+            </div>
+            <div class="song-options">
+                <button>⋮</button>
+            </div>
+        </div>
+
+         <div class="song-item" onclick="playCantieriDelGiappone()">
+            <img src="tutta-vita.jpg" class="song-cover">
+            <div class="song-info">
+                <span class="song-title"> I cantieri del Giappone</span>
+                <span class="song-artist">Olly</span>
+            </div>
+            <div class="song-options">
+                <button>⋮</button>
+            </div>
+        </div>
+
+         <div class="song-item" onclick="playPerDueComeNoi()">
+            <img src="tutta-vita.jpg" class="song-cover">
+            <div class="song-info">
+                <span class="song-title">Per due come noi</span>
+                <span class="song-artist">Olly</span>
+            </div>
+            <div class="song-options">
+                <button>⋮</button>
+            </div>
+        </div>
+
+         <div class="song-item" onclick="playQueiRicordiLa()">
+            <img src="tutta-vita.jpg" class="song-cover">
+            <div class="song-info">
+                <span class="song-title">Quei ricordi la</span>
+                <span class="song-artist">Olly</span>
+            </div>
+            <div class="song-options">
+                <button>⋮</button>
+            </div>
+        </div>
+
+         <div class="song-item" onclick="playNoiChe()">
+            <img src="tutta-vita.jpg" class="song-cover">
+            <div class="song-info">
+                <span class="song-title">Noi che</span>
+                <span class="song-artist">Olly</span>
+            </div>
+            <div class="song-options">
+                <button>⋮</button>
+            </div>
+        </div>
+
+         <div class="song-item" onclick="playDevastante()">
+            <img src="tutta-vita.jpg" class="song-cover">
+            <div class="song-info">
+                <span class="song-title">Devastante</span>
+                <span class="song-artist">Olly</span>
+            </div>
+            <div class="song-options">
+                <button>⋮</button>
+            </div>
+        </div>
+
+         <div class="song-item" onclick="playANoiNonServeFarLamore()">
+            <img src="tutta-vita.jpg" class="song-cover">
+            <div class="song-info">
+                <span class="song-title">A noi non serve far l'amore</span>
+                <span class="song-artist">Olly</span>
+            </div>
+            <div class="song-options">
+                <button>⋮</button>
+            </div>
+        </div>
+
+         <div class="song-item" onclick="playSopraLaStessaBarca()">
+            <img src="tutta-vita.jpg" class="song-cover">
+            <div class="song-info">
+                <span class="song-title">Sopra la stessa barca</span>
+                <span class="song-artist">Olly</span>
+            </div>
+            <div class="song-options">
+                <button>⋮</button>
+            </div>
+        </div>
+
+         <div class="song-item" onclick="playLaLavatriceSiERotta()">
+            <img src="tutta-vita.jpg" class="song-cover">
+            <div class="song-info">
+                <span class="song-title">La lavatrice si è rotta</span>
+                <span class="song-artist">Olly</span>
+            </div>
+            <div class="song-options">
+                <button>⋮</button>
+            </div>
+        </div>
+
+         <div class="song-item" onclick="playScarabocchi()">
+            <img src="tutta-vita.jpg" class="song-cover">
+            <div class="song-info">
+                <span class="song-title">Scarabocchi</span>
+                <span class="song-artist">Olly</span>
+            </div>
+            <div class="song-options">
+                <button>⋮</button>
+            </div>
+        </div>
+
+         <div class="song-item" onclick="playASquarciagola()">
+            <img src="tutta-vita.jpg" class="song-cover">
+            <div class="song-info">
+                <span class="song-title">A squarciagola</span>
+                <span class="song-artist">Olly</span>
+            </div>
+            <div class="song-options">
+                <button>⋮</button>
+            </div>
+        </div>
+
+         <div class="song-item" onclick="playIlCampione()">
+            <img src="tutta-vita.jpg" class="song-cover">
+            <div class="song-info">
+                <span class="song-title">Il campione</span>
+                <span class="song-artist">Olly</span>
+            </div>
+            <div class="song-options">
+                <button>⋮</button>
+            </div>
+        </div>
+
+         <div class="song-item" onclick="playDepressoFortunato()">
+            <img src="tutta-vita.jpg" class="song-cover">
+            <div class="song-info">
+                <span class="song-title">Depresso fortunato</span>
+                <span class="song-artist">Olly</span>
+            </div>
+            <div class="song-options">
+                <button>⋮</button>
+            </div>
+        </div>
+
+        <div class="song-item" onclick="playQuestaDomenica()">
+            <img src="tutta-vita.jpg" class="song-cover">
+            <div class="song-info">
+                <span class="song-title">Questa domenica</span>
+                <span class="song-artist">Olly</span>
+            </div>
+            <div class="song-options">
+                <button>⋮</button>
+            </div>
+        </div>
+
+            <div class="song-bar" id="Song-Bar" style="display:none;">
+            <div class="song-left">
+                <img id="song-img">
+                <div>
+                    <div id="song-title"></div>
+                    <div id="song-artist"></div>
+                </div>
+            </div>
+            <div class="song-control">
+                <button id="btn" onclick="togglePlay()">▶</button>
+            </div>
+            <div class="progress-container">
+                <div class="progress"></div>
+            </div>
+        </div>
+    </div>
+
+      <audio id="play-song"></audio>
+
+</body>
+
+</html>
+
+<style>
+    body,
+    html {
+        width: 100%;
+        height: 170%;
+        margin: 0;
+        background-color: black;
+        margin-bottom: 80px;
+        font-family: 'Montserrat', sans-serif;
+         background: linear-gradient(to bottom, #b5f3a9 0%, black 23%);
+    }
+
+    .image {
+        margin-top: 5%;
+        text-align: center;
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .image img {
+        width: 13em;
+    }
+
+    .title {
+        margin-top: 5%;
+        margin-left: 3%;
+        color: white;
+        text-align: left;
+        font-size: x-large;
+    }
+
+    .artist {
+        display: flex;
+    }
+
+    .artist img {
+        margin-top: 5%;
+        margin-left: 3%;
+        width: 1em;
+        height: 1em;
+        border-radius: 50%;
+        object-fit: cover
+    }
+
+    .artist h5 {
+        color: white;
+        margin-left: 3%;
+        margin-top: 5%;
+    }
+
+    .description {
+        color: white;
+        display: flex;
+        margin-left: 3%;
+    }
+    .option button{
+        background-color: transparent;
+        border: none;
+    }
+    .left-option i{
+        color: grey;
+        font-size: 25px;
+    }
+    .option{
+        display: flex;
+        justify-content: space-between;
+    }
+    .left-option{
+        display: flex;
+        margin-left: 10%;
+        gap: 20%;
+    }
+
+    .right-option i{
+        font-size: 25px;
+        color: rgb(83, 246, 124);
+    }
+
+    .right-option{
+        display: flex;
+        margin-right: 2%;
+    }
+
+    .right-option #special-button{
+        font-size: 40px;
+    }
+
+     .song-item {
+        display: flex;
+        align-items: center;
+        padding: 10px 16px;
+        gap: 12px;
+        cursor: pointer;
+    }
+
+    .song-cover {
+        width: 48px;
+        height: 48px;
+        border-radius: 4px;
+        object-fit: cover;
+    }
+
+    .song-info {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+
+    .song-title {
+        color: white;
+        font-size: 14px;
+    }
+
+    .song-artist {
+        color: #b3b3b3;
+        font-size: 12px;
+    }
+
+    .song-options button {
+        color: rgb(70, 70, 70);
+        background: black;
+        font-size: xx-large;
+        border: none;
+    }
+
+     .song-bar {
+        position: fixed;
+        bottom: 64px;
+        left: 0;
+        right: 0;
+        height: 80px;
+        background-color: #181818;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 16px;
+        border-top: 1px solid #282828;
+    }
+
+    .song-left {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        color: white;
+        font-size: small;
+    }
+
+    .song-left img {
+        width: 48px;
+        height: 48px;
+        border-radius: 4px;
+    }
+
+    .song-control button {
+        font-size: 22px;
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+    }
+
+    .progress-container {
+        position: absolute;
+        bottom: 8px;
+        left: 16px;
+        right: 16px;
+        height: 4px;
+        background: #404040;
+        border-radius: 2px;
+        cursor: pointer;
+    }
+
+    .progress {
+        height: 100%;
+        width: 0%;
+        background: white;
+        border-radius: 2px;
+    }
+</style>
+
+
+<script>
+
+    const play_song = document.getElementById("play-song");
+    const btn = document.getElementById("btn");
+
+    function playEFesta() {
+        document.getElementById("Song-Bar").style.display = "flex";
+        document.getElementById("song-img").src = "tutta-vita.jpg";
+        document.getElementById("song-title").innerText = "E festa";
+        document.getElementById("song-artist").innerText = "Olly";
+
+        play_song.src = "Olly, JVLI - È festa (Visual Video).mp3";
+        play_song.play();
+        btn.innerText = "⏸";
+    }
+
+    function playCantieriDelGiappone() {
+        document.getElementById("Song-Bar").style.display = "flex";
+        document.getElementById("song-img").src = "tutta-vita.jpg";
+        document.getElementById("song-title").innerText = "I cantieri del Giappone";
+        document.getElementById("song-artist").innerText = "Olly";
+
+        play_song.src = "Olly, JVLI - I cantieri del Giappone (Visual Video).mp3";
+        play_song.play();
+        btn.innerText = "⏸";
+    }
+
+    function playPerDueComeNoi() {
+        document.getElementById("Song-Bar").style.display = "flex";
+        document.getElementById("song-img").src = "tutta-vita.jpg";
+        document.getElementById("song-title").innerText = "Per due come noi";
+        document.getElementById("song-artist").innerText = "Olly";
+
+        play_song.src = "Olly, Angelina Mango, JVLI - Per due come noi (Official Video).mp3";
+        play_song.play();
+        btn.innerText = "⏸";
+    }
+
+    function playQueiRicordiLa() {
+        document.getElementById("Song-Bar").style.display = "flex";
+        document.getElementById("song-img").src = "tutta-vita.jpg";
+        document.getElementById("song-title").innerText = "Quei ricordi la";
+        document.getElementById("song-artist").innerText = "Olly";
+
+        play_song.src = "Olly, JVLI - Quei ricordi là (Visual Video).mp3";
+        play_song.play();
+        btn.innerText = "⏸";
+    }
+
+
+    function playNoiChe() {
+        document.getElementById("Song-Bar").style.display = "flex";
+        document.getElementById("song-img").src = "tutta-vita.jpg";
+        document.getElementById("song-title").innerText = "Noi che";
+        document.getElementById("song-artist").innerText = "Olly";
+
+        play_song.src = "Olly, JVLI - Noi che (Visual Video).mp3";
+        play_song.play();
+        btn.innerText = "⏸";
+    }
+
+    function playDevastante() {
+        document.getElementById("Song-Bar").style.display = "flex";
+        document.getElementById("song-img").src = "tutta-vita.jpg";
+        document.getElementById("song-title").innerText = "Devastante";
+        document.getElementById("song-artist").innerText = "Olly";
+
+        play_song.src = "Olly, JVLI - Devastante (Official Video).mp3";
+        play_song.play();
+        btn.innerText = "⏸";
+    }
+
+    function playANoiNonServeFarLamore() {
+        document.getElementById("Song-Bar").style.display = "flex";
+        document.getElementById("song-img").src = "tutta-vita.jpg";
+        document.getElementById("song-title").innerText = "A noi non serve far l'amore";
+        document.getElementById("song-artist").innerText = "Olly";
+
+        play_song.src = "Olly, JVLI - A noi non serve far lamore (Visual Video).mp3";
+        play_song.play();
+        btn.innerText = "⏸";
+    }
+
+    function playSopraLaStessaBarca() {
+        document.getElementById("Song-Bar").style.display = "flex";
+        document.getElementById("song-img").src = "tutta-vita.jpg";
+        document.getElementById("song-title").innerText = "Sopra la stessa barca";
+        document.getElementById("song-artist").innerText = "Olly";
+
+        play_song.src = "Olly, Enrico Nigiotti, JVLI - Sopra la stessa barca (Visual Video).mp3";
+        play_song.play();
+        btn.innerText = "⏸";
+    }
+
+    function playLaLavatriceSiERotta() {
+        document.getElementById("Song-Bar").style.display = "flex";
+        document.getElementById("song-img").src = "tutta-vita.jpg";
+        document.getElementById("song-title").innerText = "La lavatrice si è rotta";
+        document.getElementById("song-artist").innerText = "Olly";
+
+        play_song.src = "Olly, JVLI - La lavatrice si è rotta (Visual Video).mp3";
+        play_song.play();
+        btn.innerText = "⏸";
+    }
+
+    function playScarabocchi() {
+        document.getElementById("Song-Bar").style.display = "flex";
+        document.getElementById("song-img").src = "tutta-vita.jpg";
+        document.getElementById("song-title").innerText = "Scarabocchi";
+        document.getElementById("song-artist").innerText = "Olly";
+
+        play_song.src = "Olly, JVLI - Scarabocchi (Visual Video).mp3";
+        play_song.play();
+        btn.innerText = "⏸";
+    }
+
+    function playASquarciagola() {
+        document.getElementById("Song-Bar").style.display = "flex";
+        document.getElementById("song-img").src = "tutta-vita.jpg";
+        document.getElementById("song-title").innerText = "A squarciagola";
+        document.getElementById("song-artist").innerText = "Olly";
+
+        play_song.src = "Olly, JVLI - A Squarciagola (Official Video).mp3";
+        play_song.play();
+        btn.innerText = "⏸";
+    }
+
+    function playIlCampione() {
+        document.getElementById("Song-Bar").style.display = "flex";
+        document.getElementById("song-img").src = "tutta-vita.jpg";
+        document.getElementById("song-title").innerText = "Il campione";
+        document.getElementById("song-artist").innerText = "Olly";
+
+        play_song.src = "Olly, JVLI - Il campione (Visual Video).mp3";
+        play_song.play();
+        btn.innerText = "⏸";
+    }
+
+    function playDepressoFortunato() {
+        document.getElementById("Song-Bar").style.display = "flex";
+        document.getElementById("song-img").src = "tutta-vita.jpg";
+        document.getElementById("song-title").innerText = "Depresso fortunato";
+        document.getElementById("song-artist").innerText = "Olly";
+
+        play_song.src = "Olly, Juli - Depresso fortunato (Official Video).mp3";
+        play_song.play();
+        btn.innerText = "⏸";
+    }
+
+    function playQuestaDomenica() {
+        document.getElementById("Song-Bar").style.display = "flex";
+        document.getElementById("song-img").src = "tutta-vita.jpg";
+        document.getElementById("song-title").innerText = "Questa domenica";
+        document.getElementById("song-artist").innerText = "Olly";
+
+        play_song.src = "Olly, Juli - Questa domenica (Visual Video).mp3";
+        play_song.play();
+        btn.innerText = "⏸";
+    }
+    function togglePlay() {
+        if (play_song.paused) {
+            play_song.play();
+            btn.innerText = "⏸";
+        } else {
+            play_song.pause();
+            btn.innerText = "▶";
+        }
+    }
+
+    const progress = document.querySelector(".progress");
+    const progressContainer = document.querySelector(".progress-container");
+
+
+    play_song.addEventListener("timeupdate", () => {
+        const percent = (play_song.currentTime / play_song.duration) * 100;
+        progress.style.width = percent + "%";
+    });
+
+    progressContainer.addEventListener("click", (e) => {
+        const width = progressContainer.clientWidth;
+        const clickX = e.offsetX;
+        const duration = play_song.duration;
+
+        play_song.currentTime = (clickX / width) * duration;
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
