@@ -35,7 +35,7 @@
             </div>
             <div class="form">
                 <label for="password">Password</label>
-                <input type="password" name="password"  id="password" placeholder="Password">
+                <input type="password" name="password" id="password" placeholder="Password">
             </div>
             <div class="remember">
                 <input type="checkbox">
@@ -43,16 +43,18 @@
             </div>
         </form>
         <div class="log-in">
-            <button class="button"onclick="login()" id="loginBTN">Log in</button>
+            <button class="button" onclick="login()" id="loginBTN">Log in</button>
             <p id="errore" style="color:red;"></p>
             <a href="" class="button">Forgot your password?</a>
         </div>
         <div class="footer">
             <p>Don't have an account?</p>
-            <a href="registrazione.html">Sign up for Spotify</a>
+            <a href="registrazione.html"></a>Sign up for Spotify</a>
         </div>
     </div>
+
 </body>
+
 </html>
 
 
@@ -65,9 +67,7 @@
         margin: 0;
         background-color: black;
         font-family: 'Montserrat', sans-serif;
-
     }
-
     .container {
         display: flex;
         flex-direction: column;
@@ -101,7 +101,7 @@
         border: 1px solid #727272;
         font-weight: bold;
         width: 80%;
-   
+
     }
 
     .alternative #Google {
@@ -147,81 +147,90 @@
     .form label {
         color: white;
         margin-bottom: 2%;
-        font-size:small;
+        font-size: small;
     }
-    .form{
+
+    .form {
         display: flex;
         flex-direction: column;
         gap: 10%;
     }
-    .form input{
+
+    .form input {
         padding: 4%;
         background-color: black;
         color: white;
         margin-bottom: 6%;
         border: 1px solid #727272;
     }
-    .remember{
+
+    .remember {
         display: flex;
         align-items: center;
         gap: 2%;
     }
-    .remember label{
+
+    .remember label {
         color: white;
         font-size: small;
     }
-    .log-in{
+
+    .log-in {
         margin-top: 7%;
         width: 100%;
         text-align: center;
     }
-    .log-in button{
+
+    .log-in button {
         background-color: rgb(29, 185, 84);
         border-radius: 20px;
         width: 70%;
         padding: 3%;
         border: 1px solid #727272;
     }
-    .log-in a{
+
+    .log-in a {
         color: white;
     }
-    .footer a{
+
+    .footer a {
         color: white;
         font-size: small;
     }
-    .footer p{
+
+    .footer p {
         color: gray;
     }
-    .footer{
+
+    .footer {
         display: flex;
         flex-direction: row;
         text-align: center;
         align-items: center;
-        gap:3px;
-        margin-top:10%;
+        gap: 3px;
+        margin-top: 10%;
     }
-
 </style>
 
 <script>
 
-    const btn=document.getElementById("loginBTN");
+    const btn = document.getElementById("loginBTN");
     btn.addEventListener("click", login);
 
     function login() {
-        const email= document.getElementById("email").value;
-        const password= document.getElementById("password").value;
+        const email = document.getElementById("email").value;
+        const password = document.getElementById("password").value;
 
-        const emailCorretta="morizciancio@gmail.com"
-        const passwordCorretta="moriz"
+        const emailCorretta = "morizciancio@gmail.com"
+        const passwordCorretta = "moriz"
 
-        if(email==emailCorretta && password==passwordCorretta) {
-            window.location.href="app.html";
+        if (email == emailCorretta && password == passwordCorretta) {
+            window.location.href = "app.html";
         }
-        else{
+        else {
 
-            document.getElementById("errore").innerHTML= "Email o password non corretti";
+            document.getElementById("errore").innerHTML = "Email o password non corretti";
 
         }
-    }
+    };
 </script>
