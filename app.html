@@ -370,4 +370,8 @@
         const duration = play_song.duration;
         play_song.currentTime = (clickX / width) * duration;
     });
+
+    if(localStorage.getItem("loggedIn")!=="true") {
+        windowx.html.location.href="index.html";
+    }
 </script>
