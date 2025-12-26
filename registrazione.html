@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <title>Registrati</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">
+            <h2>Sign up for Spotify</h2>
+        </div>
+        <div class="alternative">
+            <button class="btn">
+                <img src="Google.jpg" id="Google">
+                <span>Continue with Google</span>
+            </button>
+            <button class="btn">
+                <img src="facebook1.jpg" id="Facebook1">
+                <span>Continue with Facebook</span>
+            </button>
+            <button class="btn">
+                <img src="apple.jpg" id="Apple">
+                <span>Continue with Apple</span>
+            </button>
+        </div>
+        <form class="login-form">
+            <div class="form">
+                <label for="email">Email or username</label>
+                <input type="email" name="email" id="signupEmail" placeholder="Email">
+            </div>
+            <div class="form">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="signupPassword" placeholder="Password">
+            </div>
+            <div class="remember">
+                <input type="checkbox">
+                <label for="remember">Remember me</label>
+            </div>
+        </form>
+        <div class="log-in">
+            <button class="button" id="signupBTN">Log in</button>
+            <p id="errore" style="color:red;"></p>
+            <a href="" class="button">Forgot your password?</a>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
+
+
+<style>
+    body,
+    html {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        background-color: black;
+        font-family: 'Montserrat', sans-serif;
+
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .title {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+    .title h2 {
+        color: white;
+        margin-top: 13%;
+    }
+
+    .alternative button {
+        margin-top: 2%;
+        padding: 2%;
+        margin-left: 20%;
+        margin-right: 20%;
+        white-space: nowrap;
+        border-radius: 30px;
+        color: white;
+        background-color: black;
+        font-weight: bold;
+        width: 80%;
+        border: 1px solid #727272;
+    }
+
+    .alternative #Google {
+        width: 12%;
+        height: 12%;
+
+    }
+
+    .alternative #Facebook1 {
+        max-width: 13%;
+        max-height: 13%;
+
+    }
+
+    .alternative #Apple {
+        height: 12%;
+        width: 12%;
+    }
+
+    .alternative {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        justify-items: center;
+        align-items: center;
+        margin-top: 5%;
+    }
+
+    .btn {
+        display: flex;
+        align-items: center;
+        gap: 14%;
+    }
+
+    .login-form {
+        margin-top: 15%;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form label {
+        color: white;
+        margin-bottom: 2%;
+        font-size: small;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        gap: 10%;
+    }
+
+    .form input {
+        padding: 4%;
+        background-color: black;
+        color: white;
+        margin-bottom: 6%;
+        border: 1px solid #727272;
+    }
+
+    .remember {
+        display: flex;
+        align-items: center;
+        gap: 2%;
+    }
+
+    .remember label {
+        color: white;
+        font-size: small;
+    }
+
+    .log-in {
+        margin-top: 7%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .log-in button {
+        background-color: rgb(29, 185, 84);
+        border-radius: 20px;
+        width: 70%;
+        padding: 3%;
+        border: 1px solid #727272;
+    }
+
+    .log-in a {
+        color: white;
+    }
+</style>
+
+<script>
+
+    document.getElementById("signupBTN").addEventListener("click", signup);
+
+    function signup() {
+    const email = document.getElementById("signupEmail").value;
+    const password = document.getElementById("signupPassword").value;
+
+    if (email === "" || password === "") {
+        document.getElementById("errore").innerHTML = "Compila tutti i campi";
+        return;
+    }
+
+    let users = JSON.parse(localStorage.getItem("spotifyUsers")) || [];
+
+    const emailEsiste = users.some(user => user.email === email);
+    if (emailEsiste) {
+        document.getElementById("errore").innerHTML = "Email già registrata";
+        return;
+    }
+
+    const user = { email, password };
+    users.push(user);
+
+    localStorage.setItem("spotifyUsers", JSON.stringify(users));
+
+    document.getElementById("errore").style.color = "green";
+    document.getElementById("errore").innerHTML = "Registrazione completata!";
+
+    setTimeout(() => {
+        window.location.href = "accesso.html";
+    }, 1500);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
