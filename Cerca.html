@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <title>Cerca</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="top-zone">
+            <div class="left">
+                <button>M</button>
+                <h2>Cerca</h2>
+            </div>
+            <div class="right">
+                <button><i class="fa-solid fa-camera"></i></button>
+            </div>
+        </div>
+        <div class="search-bar">
+            <button class="search-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <input type="text" id="searchInput" placeholder="Cosa vuoi ascoltare?" readonly onclick="goToSearch()">
+        </div>
+        <div class="text">
+            <h3>Sfoglia tutto</h3>
+        </div>
+
+        <div class="categories">
+            <div class="category" style="background:#1db954;">
+                <span>Musica</span>
+            </div>
+
+            <div class="category" style="background:#e13300;">
+                <span>Podcast</span>
+            </div>
+
+            <div class="category" style="background:#7358ff;">
+                <span>Classifiche</span>
+            </div>
+
+            <div class="category" style="background:#ff9f00;">
+                <span>Nuove uscite</span>
+            </div>
+
+            <div class="category" style="background:#ff2c6d;">
+                <span>Pop</span>
+            </div>
+
+            <div class="category" style="background:#1e3264;">
+                <span>Hip Hop</span>
+            </div>
+
+            <div class="category" style="background:#b91da1;">
+                <span>Indie</span>
+            </div>
+
+            <div class="category" style="background:#124626;">
+                <span>Prossime ucite</span>
+            </div>
+
+            <div class="category" style="background:#e61818;">
+                <span>Rock</span>
+            </div>
+
+            <div class="category" style="background:#ffb133;">
+                <span>Radio</span>
+            </div>
+
+            <div class="category" style="background:#ff5a8c;">
+                <span>Scopri</span>
+            </div>
+
+            <div class="category" style="background:#1e3264;">
+                <span>Party</span>
+            </div>
+        </div>
+        <div class="footer">
+            <a href="app.html"><button class="option "> <i class="fa-solid fa-home"></i> <span>Home</span> </button></a>
+            <a href="Cerca.html"> <button class="option active"> <i class="fa-solid fa-magnifying-glass"></i>
+                    <span>Cerca</span> </button></a> <a href="libreria.html"><button class="option"> <i
+                        class="fas fa-layer-group"></i> <span>La tua
+                        libreria</span> </button> </a> <button class="option"> <i class="fa-brands fa-spotify"></i>
+                <span>Premium</span> </button> <button class="option"> <i class="fa-solid fa-plus"></i>
+                <span>Crea</span> </button>
+        </div>
+        <!-- Lista canzoni filtrabili -->
+        <div id="song-list"></div>
+
+        <!-- Song bar in basso -->
+        <div class="song-bar" id="Song-Bar" style="display:none;">
+            <div class="song-left">
+                <img id="song-img" src="" alt="cover">
+                <div>
+                    <div id="song-title"></div>
+                    <div id="song-artist"></div>
+                </div>
+            </div>
+            <div class="song-control">
+                <button id="btn" onclick="togglePlay()">▶</button>
+            </div>
+            <div class="progress-container">
+                <div class="progress"></div>
+            </div>
+        </div>
+
+        <!-- Audio invisibile -->
+        <audio id="play-song"></audio>
+
+
+
+    </div>
+
+</body>
+
+</html>
+
+
+<style>
+    body,
+    html {
+        width: 100%;
+        height: 125%;
+        margin: 0;
+        background-color: #121212;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .top-zone {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .left {
+        display: flex;
+        gap: 15%;
+        justify-content: center;
+        align-items: center;
+        margin-left: 5%;
+    }
+
+    .left h2 {
+        color: white;
+        font-weight: bold;
+    }
+
+    .left button {
+        height: 45%;
+        border-radius: 50%;
+        background-color: rgb(250, 175, 250);
+        color: black;
+        border: 1px solid #727272;
+    }
+
+    .right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 5%;
+    }
+
+    .right button {
+        background-color: transparent;
+        color: white;
+        border: none;
+    }
+
+    .right i {
+        font-size: x-large;
+    }
+
+    .search-bar {
+        display: flex;
+        align-items: center;
+        background-color: white;
+        border-radius: 8px;
+        padding: 0 12px;
+        margin: 16px;
+        height: 44px;
+    }
+
+    .search-icon {
+        background: none;
+        border: none;
+        color: black;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .search-bar input {
+        background: transparent;
+        border: none;
+        outline: none;
+        color: black;
+        font-size: 15px;
+        width: 100%;
+        margin-left: 8px;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .search-bar input::placeholder {
+        color: black;
+    }
+
+    .text {
+        color: white;
+        font-weight: bold;
+        margin-left: 5%;
+    }
+
+    .categories {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        padding: 16px;
+    }
+
+    .category {
+        height: 100px;
+        border-radius: 8px;
+        padding: 12px;
+        display: flex;
+        font-weight: bold;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .option {
+        display: flex;
+        flex-direction: column;
+        opacity: 0.7;
+        transition: all 0.3s ease;
+    }
+
+    .option.active {
+        opacity: 1;
+        color: #ffffff;
+    }
+
+    .option.active i {
+        color: #ffffff;
+    }
+
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        text-align: center;
+    }
+
+    .option i {
+        font-size: 20px;
+        color: #b3b3b3;
+    }
+
+    .option {
+        border: none;
+        background-color: transparent;
+        color: white;
+        margin-left: 1%;
+        margin-bottom: 2%;
+        white-space: nowrap;
+        gap: 5px;
+    }
+
+    .footer a {
+        text-decoration: none;
+    }
+</style>
+
+<script>
+    function goToSearch() {
+    window.location.href = "search.html";
+}
+</script>
