@@ -5,12 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <title>Tutta Vita</title>
 </head>
 
 <body>
-    <div class="conatiner">
+    <div class="container">
+        <a href="app.html" class="back-arrow">
+            <i class="fa-solid fa-arrow-left"></i>
+        </a>
         <div class="image">
             <img src="tutta-vita.jpg" class="img">
             <div class="album-details">
@@ -40,7 +43,7 @@
             </div>
         </div>
 
-       <div id="song-list"></div>
+        <div id="song-list"></div>
 
 
         <div class="song-bar" id="Song-Bar" style="display:none;">
@@ -248,6 +251,24 @@
         background: white;
         border-radius: 2px;
     }
+    .container{
+        position:relative ;
+    }
+    .back-arrow {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.back-arrow i {
+    padding: 10px;
+    border-radius: 50%;
+}
 </style>
 
 <script>
@@ -255,7 +276,6 @@
     const btn = document.getElementById("btn");
     const songBar = document.getElementById("Song-Bar");
 
-    // Array dei brani
     const songs = [
         { title: "E festa", file: "È festa.mp3", cover: "tutta-vita.jpg", artist: "Olly" },
         { title: "I cantieri del Giappone", file: "Icantieridelgiappone.mp3", cover: "tutta-vita.jpg", artist: "Olly" },
@@ -275,7 +295,6 @@
 
     const songList = document.getElementById("song-list");
 
-    // Genera gli elementi dei brani
     songs.forEach(song => {
         const songItem = document.createElement("div");
         songItem.classList.add("song-item");
