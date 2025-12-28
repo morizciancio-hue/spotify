@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Buio Davanti",
+    "artist": "Lazza",
+    "file": "audio/Lazza - BUIO DAVANTI (Visual).mp3",
+    "cover": "img/buio-davanti1.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Fellini",
+    "artist": "Ernia, Kid Yugi",
+    "file": "audio/Ernia, Kid Yugi - FELLINI (Visual).mp3",
+    "cover": "img/Fellini.jpg"
+  },
+
+  {
+     "id": 3,
+    "title": "A noi non serve far l'amore",
+    "artist": "Olly",
+    "file": "Spotify/audio/Anoinonservefarlamore.mp3",
+    "cover": "img/tutta-vita.jpg"
+    
+
+  }
+]
