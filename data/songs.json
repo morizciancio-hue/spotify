@@ -18,10 +18,127 @@
      "id": 3,
     "title": "A noi non serve far l'amore",
     "artist": "Olly",
-    "file": "audio/Anoinonservefarlamore.mp3",
+    "file": "Spotify/audio/Anoinonservefarlamore.mp3",
+    "cover": "img/tutta-vita.jpg"
+    
+
+  },
+   {
+     "id": 4,
+    "title": "É festa",
+    "artist": "Olly",
+    "file": "audio/É festa.mp3",
+    "cover": "img/tutta-vita.jpg"
+    
+
+  },
+   {
+     "id": 5,
+    "title": "I cantieri del Giappone",
+    "artist": "Olly",
+    "file": "audio/Icantieridelgiappone.mp3",
+    "cover": "img/tutta-vita.jpg"
+    
+
+  },
+   {
+     "id": 6,
+    "title": "Per due come noi",
+    "artist": "Olly",
+    "file": "audio/Perduecomenoi.mp3",
+    "cover": "img/tutta-vita.jpg"
+    
+
+  },
+   {
+     "id": 7,
+    "title": "Quei ricordi là",
+    "artist": "Olly",
+    "file": "audio/Queiricordila.mp3",
+    "cover": "img/tutta-vita.jpg"
+    
+
+  },
+   {
+     "id": 8,
+    "title": "Noi che",
+    "artist": "Olly",
+    "file": "audio/Noiche.mp3",
+    "cover": "img/tutta-vita.jpg"
+    
+
+  },
+   {
+     "id": 9,
+    "title": "Devastante",
+    "artist": "Olly",
+    "file": "audio/Devastante.mp3",
+    "cover": "img/tutta-vita.jpg"
+    
+
+  },
+   {
+     "id": 10,
+    "title": "Sopra la stessa barca",
+    "artist": "Olly",
+    "file": "audio/Sopralastessabarca.mp3",
+    "cover": "img/tutta-vita.jpg"
+    
+
+  },
+   {
+     "id": 11,
+    "title": "La lavatrice si è rotta",
+    "artist": "Olly",
+    "file": "audio/Lalavatricesierotta.mp3",
+    "cover": "img/tutta-vita.jpg"
+    
+
+  },
+   {
+     "id": 12,
+    "title": "Scarabocchi",
+    "artist": "Olly",
+    "file": "audio/Scarabocchi.mp3",
+    "cover": "img/tutta-vita.jpg"
+    
+
+  },
+   {
+     "id": 13,
+    "title": "A squarciagola",
+    "artist": "Olly",
+    "file": "audio/Asquarciagola.mp3",
+    "cover": "img/tutta-vita.jpg"
+    
+
+  },
+   {
+     "id": 14,
+    "title": "Il campione",
+    "artist": "Olly",
+    "file": "audio/Ilcampione.mp3",
+    "cover": "img/tutta-vita.jpg"
+    
+
+  },
+   {
+     "id": 15,
+    "title": "Depresso fortunato",
+    "artist": "Olly",
+    "file": "audio/Depressofortunato.mp3",
+    "cover": "img/tutta-vita.jpg"
+    
+
+  },
+   {
+     "id": 16,
+    "title": "Questa domenica",
+    "artist": "Olly",
+    "file": "audio/Questadomenica.mp3",
     "cover": "img/tutta-vita.jpg"
     
 
   }
-]
 
+]
