@@ -21,28 +21,28 @@
         <div class="album-text">
             <h2>Creato per Moriz Ciancio</h2>
         </div>
-        <div class="orizzontal-bar"> <a href="TuttaVita.html"> <img src="tutta-vita.jpg" class="cover">
+        <div class="orizzontal-bar"> <a href="TuttaVita.html"> <img src="img/tutta-vita.jpg" class="cover">
                 <div class="info"> <span class="title">Tutta Vita,</span> <span class="name">Olly</span> </div>
             </a>
-            <div> <img src="anima-nera.jpeg" class="cover">
+            <div> <img src="img/anima-nera.jpeg" class="cover">
                 <div class="info"> <span class="title">Anima Nera</span> <span class="name">Il Tre</span> </div>
             </div>
-            <div> <img src="locura.jpg" class="cover">
+            <div> <img src="img/locura.jpg" class="cover">
                 <div class="info"> <span class="title">Locura,</span> <span class="name">Lazza</span> </div>
             </div>
         </div>
         <div class="album-text">
             <h2>Stazioni radio più popolari</h2>
         </div>
-        <div class="orizzontal-bar"> <a href=""> <img src="stazione-radio2.jpeg" class="cover">
+        <div class="orizzontal-bar"> <a href=""> <img src="img/stazione-radio2.jpeg" class="cover">
                 <div class="info"> <span class="title">Bad Bunny, Daddy Y..,<br></span> <span class="name">Anuel AA,
                         Arcàngel,...</span> </div>
             </a>
-            <div> <img src="stazione-radio4.jpeg" class="cover">
+            <div> <img src="img/stazione-radio4.jpeg" class="cover">
                 <div class="info"> <span class="title">The Weekend, Ariana<br></span> <span
                         class="name">Grande,Future,Doja..</span> </div>
             </div>
-            <div> <img src="stazione-radio3.jpeg" class="cover">
+            <div> <img src="img/stazione-radio3.jpeg" class="cover">
                 <div class="info"> <span class="title">Bruno Mars, Coldplay..<br></span> <span class="name">Ed Sheeran,
                         Maroon5..</span> </div>
             </div>
@@ -50,13 +50,13 @@
         <div class="album-text">
             <h2>Artisti più popolari</h2>
         </div>
-        <div class="orizzontal-bar"> <a href=""> <img src="Olly.jpg" class="cover-circle">
+        <div class="orizzontal-bar"> <a href=""> <img src="img/Olly.jpg" class="cover-circle">
                 <div class="info"> <span class="name">Olly</span> </div>
             </a>
-            <div> <img src="Il-Tre.jpg" class="cover-circle">
+            <div> <img src="img/Il-Tre.jpg" class="cover-circle">
                 <div class="info"> <span class="name">Il Tre</span> </div>
             </div>
-            <div> <img src="Lazza.jpg" class="cover-circle">
+            <div> <img src="img/Lazza.jpg" class="cover-circle">
                 <div class="info"> <span class="name">Lazza</span> </div>
             </div>
         </div>
@@ -324,9 +324,9 @@
     const songBar = document.getElementById("Song-Bar");
 
     const songs = [
-        { title: "Buio Davanti", file: "Lazza - BUIO DAVANTI (Visual).mp3", cover: "buio-davanti1.jpg", artist: "Lazza" },
-        { title: "Fellini", file: "Ernia, Kid Yugi - FELLINI (Visual).mp3", cover: "Fellini.jpg", artist: "Ernia,Kid Yugi" },
-        { title: "Kabuki", file: "Kabuki.mp3", cover: "kabuki.jpg", artist: "Kid Yugi" },
+        { title: "Buio Davanti", file: "audio/Lazza - BUIO DAVANTI (Visual).mp3", cover: "img/buio-davanti1.jpg", artist: "Lazza" },
+        { title: "Fellini", file: "audio/Ernia, Kid Yugi - FELLINI (Visual).mp3", cover: "img/Fellini.jpg", artist: "Ernia,Kid Yugi" },
+        { title: "Kabuki", file: "audio/Kabuki.mp3", cover: "img/kabuki.jpg", artist: "Kid Yugi" },
     ];
 
     const songList = document.getElementById("song-list");
@@ -388,6 +388,6 @@
     });
 
     if (localStorage.getItem("loggedIn") !== "true") {
-        windowx.location.href = "index.html";
+        window.location.href = "index.html";
     }
 </script>
