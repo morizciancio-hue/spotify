@@ -12,16 +12,13 @@
 
 <body>
     <div class="container">
-        <!-- Top bar -->
         <div class="top-zone">
             <a href="Cerca.html"><button id="back"><i class="fa-solid fa-arrow-left"></i></button></a>
             <input type="text" id="searchInput" placeholder="Cerca canzoni, artisti, podcast...">
         </div>
 
-        <!-- Risultati ricerca -->
         <div id="song-list" class="song-list"></div>
 
-        <!-- Song bar -->
         <div class="song-bar" id="Song-Bar" style="display:none;">
             <div class="song-left">
                 <img id="song-img">
@@ -40,6 +37,8 @@
     </div>
 
     <audio id="play-song"></audio>
+
+    <script src="js/search.js"></script>
 </body>
 
 </html>
@@ -178,7 +177,7 @@
 
 <script>
     // ELEMENTI
-    const play_song = document.getElementById("play-song");
+    /*const play_song = document.getElementById("play-song");
     const btn = document.getElementById("btn");
     const songBar = document.getElementById("Song-Bar");
     const songList = document.getElementById("song-list");
@@ -186,23 +185,23 @@
 
     // ARRAY DELLE CANZONI
     const songs = [
-        { title: "Buio Davanti", file: "Lazza - BUIO DAVANTI (Visual).mp3", cover: "buio-davanti1.jpg", artist: "Lazza" },
-        { title: "Fellini", file: "Ernia, Kid Yugi - FELLINI (Visual).mp3", cover: "Fellini.jpg", artist: "Ernia, Kid Yugi" },
-        { title: "Kabuki", file: "Kabuki.mp3", cover: "kabuki.jpg", artist: "Kid Yugi" },
-        { title: "E festa", file: "È festa.mp3", cover: "tutta-vita.jpg", artist: "Olly" },
-        { title: "I cantieri del Giappone", file: "Icantieridelgiappone.mp3", cover: "tutta-vita.jpg", artist: "Olly" },
-        { title: "Per due come noi", file: "Perduecomenoi.mp3", cover: "tutta-vita.jpg", artist: "Olly" },
-        { title: "Quei ricordi là", file: "Queiricordila.mp3", cover: "tutta-vita.jpg", artist: "Olly" },
-        { title: "Noi che", file: "Noiche.mp3", cover: "tutta-vita.jpg", artist: "Olly" },
-        { title: "Devastante", file: "Devastante.mp3", cover: "tutta-vita.jpg", artist: "Olly" },
-        { title: "A noi non serve far l'amore", file: "Anoinonservefarlamore.mp3", cover: "tutta-vita.jpg", artist: "Olly" },
-        { title: "Sopra la stessa barca", file: "Sopralastessabarca.mp3", cover: "tutta-vita.jpg", artist: "Olly" },
-        { title: "La lavatrice si è rotta", file: "Lalavatricesierotta.mp3", cover: "tutta-vita.jpg", artist: "Olly" },
-        { title: "Scarabocchi", file: "Scarabocchi.mp3", cover: "tutta-vita.jpg", artist: "Olly" },
-        { title: "A squarciagola", file: "Asquarciagola.mp3", cover: "tutta-vita.jpg", artist: "Olly" },
-        { title: "Il campione", file: "Ilcampione.mp3", cover: "tutta-vita.jpg", artist: "Olly" },
-        { title: "Depresso fortunato", file: "Depressofortunato.mp3", cover: "tutta-vita.jpg", artist: "Olly" },
-        { title: "Questa domenica", file: "Questadomenica.mp3", cover: "tutta-vita.jpg", artist: "Olly" }
+        { title: "Buio Davanti", file: "audio/Lazza - BUIO DAVANTI (Visual).mp3", cover: "img/buio-davanti1.jpg", artist: "Lazza" },
+        { title: "Fellini", file: "audio/Ernia, Kid Yugi - FELLINI (Visual).mp3", cover: "img/Fellini.jpg", artist: "Ernia, Kid Yugi" },
+        { title: "Kabuki", file: "audio/Kabuki.mp3", cover: "img/kabuki.jpg", artist: "Kid Yugi" },
+        { title: "E festa", file: "audio/È festa.mp3", cover: "img/tutta-vita.jpg", artist: "Olly" },
+        { title: "I cantieri del Giappone", file: "audio/Icantieridelgiappone.mp3", cover: "img/tutta-vita.jpg", artist: "Olly" },
+        { title: "Per due come noi", file: "audio/Perduecomenoi.mp3", cover: "img/tutta-vita.jpg", artist: "Olly" },
+        { title: "Quei ricordi là", file: "audio/Queiricordila.mp3", cover: "img/tutta-vita.jpg", artist: "Olly" },
+        { title: "Noi che", file: "audio/Noiche.mp3", cover: "img/tutta-vita.jpg", artist: "Olly" },
+        { title: "Devastante", file: "audio/Devastante.mp3", cover: "img/tutta-vita.jpg", artist: "Olly" },
+        { title: "A noi non serve far l'amore", file: "audio/Anoinonservefarlamore.mp3", cover: "img/tutta-vita.jpg", artist: "Olly" },
+        { title: "Sopra la stessa barca", file: "audio/Sopralastessabarca.mp3", cover: "img/tutta-vita.jpg", artist: "Olly" },
+        { title: "La lavatrice si è rotta", file: "audio/Lalavatricesierotta.mp3", cover: "img/tutta-vita.jpg", artist: "Olly" },
+        { title: "Scarabocchi", file: "audio/Scarabocchi.mp3", cover: "img/tutta-vita.jpg", artist: "Olly" },
+        { title: "A squarciagola", file: "audio/Asquarciagola.mp3", cover: "img/tutta-vita.jpg", artist: "Olly" },
+        { title: "Il campione", file: "audio/Ilcampione.mp3", cover: "img/tutta-vita.jpg", artist: "Olly" },
+        { title: "Depresso fortunato", file: "audio/Depressofortunato.mp3", cover: "img/tutta-vita.jpg", artist: "Olly" },
+        { title: "Questa domenica", file: "audio/Questadomenica.mp3", cover: "img/tutta-vita.jpg", artist: "Olly" }
     ];
 
     // FUNZIONE PER MOSTRARE LE CANZONI
@@ -228,7 +227,7 @@
     searchInput.addEventListener("input", () => {
         const query = searchInput.value.toLowerCase().trim();
         if (query === "") {
-            songList.innerHTML = ""; // Nessuna canzone mostrata se la barra è vuota
+            songList.innerHTML = ""; 
             return;
         }
         const results = songs.filter(song => song.title.toLowerCase().includes(query));
@@ -280,7 +279,7 @@
     // REDIRECT SE NON LOGGATO
     if (localStorage.getItem("loggedIn") !== "true") {
         window.location.href = "index.html";
-    }
+    }*/
 
 
 </script>
