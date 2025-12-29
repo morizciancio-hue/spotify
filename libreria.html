@@ -11,7 +11,7 @@
 
 <body>
     <div class="container">
-        <div class="option">
+        <div class="option-library">
             <div class="left-option">
                 <button class="btn-icon">M</button>
                 <h2>La tua libreria</h2>
@@ -37,42 +37,44 @@
                 <button><i class="fa-solid fa-table-cells-large"></i></button>
             </div>
         </div>
-         <div class="box-item">
+        <div class="box-item">
             <img src="img/like.jpg" class="box-cover">
             <div class="box-info">
                 <span class="box-title">Brani che ti piacciono</span>
             </div>
         </div>
-         <div class="box-item">
+        <div class="box-item">
             <button class="box-cover-circle"><i class="fa-solid fa-plus"></i></button>
             <div class="box-info">
                 <span class="box-title">Aggiungi artisti</span>
             </div>
         </div>
-         <div class="box-item">
+        <div class="box-item">
             <button class="box-cover"><i class="fa-solid fa-plus"></i></button>
             <div class="box-info">
                 <span class="box-title">Aggiungi podcast</span>
             </div>
         </div>
-         <div class="box-item">
+        <div class="box-item">
             <button class="box-cover"><i class="fa-solid fa-plus"></i></button>
             <div class="box-info">
                 <span class="box-title">Aggiungi eventi e luoghi</span>
             </div>
         </div>
-          <div class="box-item">
+        <div class="box-item">
             <button class="box-cover"><i class="fa-solid fa-download"></i></button>
             <div class="box-info">
                 <span class="box-title">Importa la tua musica</span>
             </div>
         </div>
-         <div class="footer"><a href="app.html"><button class="option"> <i class="fa-solid fa-home"></i> <span>Home</span> </button></a> 
-            <button class="option"> <i class="fa-solid fa-magnifying-glass"></i> <span>Cerca</span> </button> <a
-                href="libreria.html"><button class="option active"> <i class="fas fa-layer-group"></i> <span>La tua
-                        libreria</span> </button> </a> <button class="option"> <i class="fa-brands fa-spotify"></i>
-                <span>Premium</span> </button> <button class="option"> <i class="fa-solid fa-plus"></i>
-                <span>Crea</span> </button>
+        <div class="footer">
+            <a href="app.html"><button class="option"> <i class="fa-solid fa-home"></i> <span>Home</span> </button></a>
+            <a href="Cerca.html"> <button class="option"> <i class="fa-solid fa-magnifying-glass"></i>
+                    <span>Cerca</span> </button></a>
+            <a href="libreria.html"><button class="option active"> <i class="fas fa-layer-group"></i> <span>La tua
+                        libreria</span> </button> </a>
+            <button class="option"> <i class="fa-brands fa-spotify"></i> <span>Premium</span> </button>
+            <button class="option"> <i class="fa-solid fa-plus"></i> <span>Crea</span> </button>
         </div>
     </div>
 
@@ -97,7 +99,7 @@
         justify-content: space-between;
     }
 
-    .left-option {
+    .option-library {
         display: flex;
         align-items: center;
         gap: 15px;
@@ -105,25 +107,30 @@
     }
 
     .btn-icon {
-        width: 35px;
-        height: 30px;
+        padding: 8px;
+        margin-left: 6%;
         border-radius: 50%;
         background-color: rgb(250, 175, 250);
-        border: none;
-        color: #121212;
-        font-weight: bold;
-        font-size: 18px;
+        border: 1px solid #727272;
+        width: 35px;
+        height: 35px;
+    }
+
+    .left-option {
         display: flex;
-        justify-content: center;
         align-items: center;
-        margin-left: 6%;
+        gap: 10%;
+    }
+
+    .right-option i {
+        font-size: smaller;
     }
 
     .left-option h2 {
         color: white;
     }
 
-    .option {
+    .option-library {
         display: flex;
         justify-content: space-between;
     }
@@ -168,38 +175,45 @@
         border: none;
         color: white;
     }
-    .right button{
+
+    .right button {
         background-color: transparent;
         border: none;
         color: white;
     }
-    .mid-zone{
+
+    .mid-zone {
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
-    .left{
+
+    .left {
         display: flex;
         color: white;
-        margin-left: 2%; 
+        margin-left: 2%;
     }
-    .right{
+
+    .right {
         display: flex;
         margin-right: 2%;
     }
-     .box-item {
+
+    .box-item {
         display: flex;
         align-items: center;
         padding: 10px 16px;
         gap: 12px;
         cursor: pointer;
     }
-    .box-item button{
+
+    .box-item button {
         background-color: #3d3d3d;
         border: none;
         color: rgb(173, 173, 173);
     }
-    .box-item i{
+
+    .box-item i {
         font-size: x-large;
     }
 
@@ -209,6 +223,7 @@
         border-radius: 4px;
         object-fit: cover;
     }
+
     .box-cover-circle {
         width: 55px;
         height: 55px;
@@ -228,51 +243,42 @@
         font-weight: bold;
         font-size: 14px;
     }
-    .footer {
-        display: flex;
-        flex-direction: row;
-        gap: 20px;
-    }
-
-    .option {
-        display: flex;
-        flex-direction: column;
-        opacity: 0.7;
-        transition: all 0.3s ease;
-    }
-
-    .option.active {
-        opacity: 1;
-        color: #ffffff;
-    }
-
-    .option.active i {
-        color: #ffffff;
-    }
 
     .footer {
         position: fixed;
-        left: 0;
         bottom: 0;
-        text-align: center;
+        left: 0;
+        width: 100%;
+        height: 70px;
+        background-color: #121212;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-top: 1px solid #282828;
+    }
+
+    .option {
+        background: none;
+        border: none;
+        color: #b3b3b3;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 10px;
+        gap: 5px;
+        cursor: pointer;
+        padding: 5px;
     }
 
     .option i {
         font-size: 20px;
-        color: #b3b3b3;
     }
 
-    .option {
-        border: none;
-        background-color: transparent;
+    .option.active {
         color: white;
-        margin-left: 1%;
-        margin-bottom: 2%;
-        white-space: nowrap;
-        gap: 5px;
     }
 
-
-   
-
+    a {
+        text-decoration: none;
+    }
 </style>
