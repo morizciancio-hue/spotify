@@ -63,17 +63,17 @@ function playTrack(song) {
   }
 
   play_song.play();
-  btn.innerText = "⏸";
+  btn.innerHTML = '<i class="fas fa-pause"></i>';
 }
 
 // 🔹 PLAY / PAUSA
 function togglePlay() {
   if (play_song.paused) {
     play_song.play();
-    btn.innerText = "⏸";
+    btn.innerHTML = '<i class="fas fa-pause"></i>';
   } else {
     play_song.pause();
-    btn.innerText = "▶";
+    btn.innerHTML = '<i class="fas fa-play"></i>';
   }
 }
 
