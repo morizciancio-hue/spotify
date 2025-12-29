@@ -60,334 +60,328 @@
                 <div class="info"> <span class="name">Lazza</span> </div>
             </div>
         </div>
+
         <div class="song-bar" id="Song-Bar" style="display:none;">
-            <div class="song-left"> <img id="song-img">
-                <div>
+            <div class="song-left">
+                <img id="song-img">
+                <div class="song-details">
                     <div id="song-title"></div>
                     <div id="song-artist"></div>
                 </div>
             </div>
-            <div class="song-control"> <button id="btn" onclick="togglePlay()">▶</button> </div>
+            <div class="song-control">
+                <button id="btn" onclick="togglePlay()"><i class="fas fa-play"></i></button>
+            </div>
             <div class="progress-container">
                 <div class="progress"></div>
             </div>
         </div>
-        <div class="footer"> <button class="option active"> <i class="fa-solid fa-home"></i> <span>Home</span> </button>
+
+        <div class="footer">
+            <button class="option active"> <i class="fa-solid fa-home"></i> <span>Home</span> </button>
             <a href="Cerca.html"> <button class="option"> <i class="fa-solid fa-magnifying-glass"></i>
-                    <span>Cerca</span> </button></a> <a href="libreria.html"><button class="option"> <i
-                        class="fas fa-layer-group"></i> <span>La tua
-                        libreria</span> </button> </a> <button class="option"> <i class="fa-brands fa-spotify"></i>
-                <span>Premium</span> </button> <button class="option"> <i class="fa-solid fa-plus"></i>
-                <span>Crea</span> </button>
+                    <span>Cerca</span> </button></a>
+            <a href="libreria.html"><button class="option"> <i class="fas fa-layer-group"></i> <span>La tua
+                        libreria</span> </button> </a>
+            <button class="option"> <i class="fa-brands fa-spotify"></i> <span>Premium</span> </button>
+            <button class="option"> <i class="fa-solid fa-plus"></i> <span>Crea</span> </button>
         </div>
-    </div> <audio id="play-song"></audio>
-</body>
+    </div>
+    <audio id="play-song"></audio>
 
-</html>
-<style>
-    body,
-    html {
-        width: 100%;
-        height: 130%;
-        margin: 0;
-        background-color: #121212;
-        font-family: 'Montserrat', sans-serif;
-    }
+    <style>
+        body,
+        html {
+            width: 100%;
+            margin: 0;
+            background-color: #121212;
+            font-family: 'Montserrat', sans-serif;
+            color: white;
+            padding-bottom: 160px;
+        }
 
-    .top-zone {
-        display: flex;
-        gap: 1%;
-    }
+        .top-zone {
+            display: flex;
+            gap: 10px;
+            padding: 10px;
+        }
 
-    .btn {
-        margin-top: 2%;
-        margin-left: 1%;
-        border-radius: 20px;
-        color: white;
-        padding: 2% 5%;
-        background-color: rgb(70, 70, 70);
-        border: none;
-        border: 1px solid #727272;
-    }
+        .btn {
+            border-radius: 20px;
+            color: white;
+            padding: 8px 15px;
+            background-color: rgb(70, 70, 70);
+            border: 1px solid #727272;
+        }
 
-    .btn-icon {
-        margin-top: 2%;
-        margin-left: 1%;
-        padding: 2%;
-        border-radius: 50%;
-        background-color: rgb(250, 175, 250);
-        border: 1px solid #727272;
-    }
+        .btn-icon {
+            padding: 8px;
+            border-radius: 50%;
+            background-color: rgb(250, 175, 250);
+            border: 1px solid #727272;
+            width: 35px;
+            height: 35px;
+        }
 
-    .text {
-        margin-left: 1%;
-        color: white;
-    }
+        .text {
+            margin-left: 1%;
+            color: white;
+        }
 
-    .song-item {
-        display: flex;
-        align-items: center;
-        padding: 10px 16px;
-        gap: 12px;
-        cursor: pointer;
-    }
+        .song-item {
+            display: flex;
+            align-items: center;
+            padding: 10px 16px;
+            gap: 12px;
+            cursor: pointer;
+        }
 
-    .song-cover {
-        width: 48px;
-        height: 48px;
-        border-radius: 4px;
-        object-fit: cover;
-    }
+        .song-cover {
+            width: 48px;
+            height: 48px;
+            border-radius: 4px;
+            object-fit: cover;
+        }
 
-    .song-info {
-        display: flex;
-        flex-direction: column;
-        flex-grow: 1;
-    }
+        .song-info {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
 
-    .song-title {
-        color: white;
-        font-size: 14px;
-    }
+        .song-title {
+            color: white;
+            font-size: 14px;
+        }
 
-    .song-artist {
-        color: #b3b3b3;
-        font-size: 12px;
-    }
+        .song-artist {
+            color: #b3b3b3;
+            font-size: 12px;
+        }
 
-    .song-options button {
-        color: rgb(70, 70, 70);
-        background: #121212;
-        font-size: xx-large;
-        border: none;
-    }
+        .song-options button {
+            color: rgb(70, 70, 70);
+            background: transparent;
+            border: none;
+            font-size: 20px;
+        }
 
-    .song-bar {
-        position: fixed;
-        bottom: 64px;
-        left: 0;
-        right: 0;
-        height: 80px;
-        background-color: #181818;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 16px;
-        border-top: 1px solid #282828;
-    }
+        .album-text {
+            margin-top: 3%;
+            color: white;
+            margin-left: 3%;
+        }
 
-    .song-left {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-        color: white;
-        font-size: small;
-    }
+        .orizzontal-bar {
+            display: flex;
+            overflow-x: auto;
+            gap: 15px;
+            padding: 10px;
+            scrollbar-width: none;
+            text-align: center;
+        }
 
-    .song-left img {
-        width: 48px;
-        height: 48px;
-        border-radius: 4px;
-    }
+        .orizzontal-bar::-webkit-scrollbar {
+            display: none;
+        }
 
-    .song-control button {
-        font-size: 22px;
-        background: none;
-        border: none;
-        color: white;
-        cursor: pointer;
-    }
+        .cover {
+            width: 10em;
+            margin-bottom: 5px;
+            border-radius: 8px;
+        }
 
-    .progress-container {
-        position: absolute;
-        bottom: 8px;
-        left: 16px;
-        right: 16px;
-        height: 4px;
-        background: #404040;
-        border-radius: 2px;
-        cursor: pointer;
-    }
+        .cover-circle {
+            width: 10em;
+            height: 10em;
+            border-radius: 50%;
+            object-fit: cover;
+        }
 
-    .progress {
-        height: 100%;
-        width: 0%;
-        background: white;
-        border-radius: 2px;
-    }
+        .title {
+            color: white;
+            font-size: small;
+        }
 
-    .footer {
-        display: flex;
-        flex-direction: row;
-        gap: 20px;
-    }
+        .name {
+            color: #b3b3b3;
+            font-size: small;
+        }
 
-    .option {
-        display: flex;
-        flex-direction: column;
-        opacity: 0.7;
-        transition: all 0.3s ease;
-    }
+        .btn.active {
+            background-color: rgb(29, 185, 84);
+            color: black;
+        }
 
-    .option.active {
-        opacity: 1;
-        color: #ffffff;
-    }
+        a {
+            text-decoration: none;
+        }
 
-    .option.active i {
-        color: #ffffff;
-    }
+        .song-bar {
+            position: fixed;
+            bottom: 75px;
+            left: 10px;
+            right: 10px;
+            height: 56px;
+            background-color: #1b1b1b;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 12px;
+            border-radius: 8px;
+        }
 
-    .footer {
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        text-align: center;
-    }
+        .song-left {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            width: 70%;
+            overflow: hidden;
+        }
 
-    .option i {
-        font-size: 20px;
-        color: #b3b3b3;
-    }
+        .song-left img {
+            width: 40px;
+            height: 40px;
+            border-radius: 4px;
+        }
 
-    .option {
-        border: none;
-        background-color: transparent;
-        color: white;
-        margin-left: 1%;
-        margin-bottom: 2%;
-        white-space: nowrap;
-        gap: 5px;
-    }
+        .song-details {
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
 
-    .album-item {
-        display: flex;
-        flex-direction: column;
-    }
+        #song-title {
+            color: white;
+            font-size: 13px;
+            font-weight: bold;
+            white-space: nowrap;
+        }
 
-    a {
-        text-decoration: none;
-    }
+        #song-artist {
+            color: #b3b3b3;
+            font-size: 11px;
+        }
 
-    .album-text {
-        margin-top: 3%;
-        color: white;
-        margin-left: 3%;
-    }
+        .song-control button {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+        }
 
-    .orizzontal-bar {
-        display: flex;
-        flex-direction: row;
-        overflow-x: auto;
-        overflow-y: hidden;
-        white-space: nowrap;
-        gap: 15px;
-        padding: 10px;
-        scrollbar-width: none;
-        text-align: center;
-    }
+        .progress-container {
+            position: absolute;
+            bottom: 0;
+            left: 10px;
+            right: 10px;
+            height: 2px;
+            background: rgba(255, 255, 255, 0.1);
+        }
 
-    .orizzontal-bar::-webkit-scrollbar {
-        display: none;
-    }
+        .progress {
+            height: 100%;
+            width: 0%;
+            background: white;
+            transition: width 0.1s;
+        }
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 70px;
+            background-color: transparent;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            z-index: 1000;
+        }
 
-    .cover {
-        margin-bottom: 3%;
-        width: 10em;
-    }
+        .option {
+            background: none;
+            border: none;
+            color: #b3b3b3;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 10px;
+            gap: 5px;
+        }
 
-    .cover-circle {
-        margin-bottom: 3%;
-        width: 10em;
-        height: 10em;
-        border-radius: 50%;
-        object-fit: cover
-    }
+        .option i {
+            font-size: 20px;
+        }
 
-    .title {
-        color: white;
-        font-size: small;
-    }
+        .option.active {
+            color: white;
+        }
+    </style>
 
-    .name {
-        color: #b3b3b3;
-        font-size: small;
-    }
+    <script>
+        const play_song = document.getElementById("play-song");
+        const btn = document.getElementById("btn");
+        const songBar = document.getElementById("Song-Bar");
+        const progress = document.querySelector(".progress");
 
-    .btn.active {
-        background-color: rgb(29, 185, 84);
-        color: black;
-    }
-</style>
-<script>  const play_song = document.getElementById("play-song");
-    const btn = document.getElementById("btn");
-    const songBar = document.getElementById("Song-Bar");
+        const songs = [
+            { title: "Buio Davanti", file: "audio/Lazza - BUIO DAVANTI (Visual).mp3", cover: "img/buio-davanti1.jpg", artist: "Lazza" },
+            { title: "Fellini", file: "audio/Ernia, Kid Yugi - FELLINI (Visual).mp3", cover: "img/Fellini.jpg", artist: "Ernia, Kid Yugi" },
+            { title: "Kabuki", file: "audio/Kabuki.mp3", cover: "img/kabuki.jpg", artist: "Kid Yugi" },
+        ];
 
-    const songs = [
-        { title: "Buio Davanti", file: "audio/Lazza - BUIO DAVANTI (Visual).mp3", cover: "img/buio-davanti1.jpg", artist: "Lazza" },
-        { title: "Fellini", file: "audio/Ernia, Kid Yugi - FELLINI (Visual).mp3", cover: "img/Fellini.jpg", artist: "Ernia,Kid Yugi" },
-        { title: "Kabuki", file: "audio/Kabuki.mp3", cover: "img/kabuki.jpg", artist: "Kid Yugi" },
-    ];
+        const songList = document.getElementById("song-list");
 
-    const songList = document.getElementById("song-list");
-
-    songs.forEach(song => {
-        const songItem = document.createElement("div");
-        songItem.classList.add("song-item");
-
-        songItem.innerHTML = `
-            <img src="${song.cover}" class="song-cover" loading="lazy">
+        songs.forEach(song => {
+            const songItem = document.createElement("div");
+            songItem.classList.add("song-item");
+            songItem.innerHTML = `
+            <img src="${song.cover}" class="song-cover">
             <div class="song-info">
                 <span class="song-title">${song.title}</span>
                 <span class="song-artist">${song.artist}</span>
             </div>
             <div class="song-options"><button>⋮</button></div>
         `;
+            songItem.onclick = () => playTrack(song.title, song.file, song.cover, song.artist);
+            songList.appendChild(songItem);
+        });
 
-        songItem.onclick = () => playTrack(song.title, song.file, song.cover);
-        songList.appendChild(songItem);
-    });
+        function playTrack(title, fileName, cover, artist) {
+            songBar.style.display = "flex";
+            document.getElementById("song-title").innerText = title;
+            document.getElementById("song-artist").innerText = artist;
+            document.getElementById("song-img").src = cover;
 
-    function playTrack(title, fileName, cover) {
-        songBar.style.display = "flex";
-        document.getElementById("song-title").innerText = title;
-        document.getElementById("song-img").src = cover;
+            if (!play_song.src.includes(encodeURIComponent(fileName))) {
+                play_song.src = fileName;
+                play_song.load();
+            }
 
-        if (!play_song.src.includes(encodeURIComponent(fileName))) {
-            play_song.src = fileName;
-            play_song.load();
-        }
-
-        play_song.play();
-        btn.innerText = "⏸";
-    }
-
-    function togglePlay() {
-        if (play_song.paused) {
             play_song.play();
-            btn.innerText = "⏸";
-        } else {
-            play_song.pause();
-            btn.innerText = "▶";
+            btn.innerHTML = '<i class="fas fa-pause"></i>';
         }
-    }
 
-    const progress = document.querySelector(".progress");
-    const progressContainer = document.querySelector(".progress-container");
+        function togglePlay() {
+            if (play_song.paused) {
+                play_song.play();
+                btn.innerHTML = '<i class="fas fa-pause"></i>';
+            } else {
+                play_song.pause();
+                btn.innerHTML = '<i class="fas fa-play"></i>';
+            }
+        }
 
-    play_song.addEventListener("timeupdate", () => {
-        const percent = (play_song.currentTime / play_song.duration) * 100;
-        progress.style.width = percent + "%";
-    });
+        play_song.addEventListener("timeupdate", () => {
+            const percent = (play_song.currentTime / play_song.duration) * 100;
+            progress.style.width = percent + "%";
+        });
 
-    progressContainer.addEventListener("click", (e) => {
-        const width = progressContainer.clientWidth;
-        const clickX = e.offsetX;
-        const duration = play_song.duration;
-        play_song.currentTime = (clickX / width) * duration;
-    });
+        if (localStorage.getItem("loggedIn") !== "true") {
+            window.location.href = "index.html";
+        }
+    </script>
+</body>
 
-    if (localStorage.getItem("loggedIn") !== "true") {
-        window.location.href = "index.html";
-    }
-</script>
+</html>
