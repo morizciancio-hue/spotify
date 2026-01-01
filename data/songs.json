@@ -444,6 +444,214 @@
     "albumId":"locura",
     "file": "audio/Buiodavanti.mp3",
     "cover": "img/locura.jpg"
+  },
+  {
+    "id": 46,
+    "title": "6SEI6(feat. Massimo Pericolo)",
+    "artist": "Kid Yugi, Massimo Pericolo",
+    "albumName":"Tutti i nomi del Diavolo",
+    "albumId":"tutti-i-nomi-del-diavolo",
+    "file": "audio/6sei6.mp3",
+    "cover": "img/Tuttiinomideldiavolo.jpg"
+  },
+  {
+    "id": 47,
+    "title": "Donna",
+    "artist": "Kid Yugi",
+    "albumName":"Tutti i nomi del Diavolo",
+    "albumId":"tutti-i-nomi-del-diavolo",
+    "file": "audio/Donna.mp3",
+    "cover": "img/Tuttiinomideldiavolo.jpg"
+  },
+  {
+    "id": 48,
+    "title": "S.X.S.I.C.",
+    "artist": "Kid Yugi",
+    "albumName":"Tutti i nomi del Diavolo",
+    "albumId":"tutti-i-nomi-del-diavolo",
+    "file": "audio/sxsic.mp3",
+    "cover": "img/Tuttiinomideldiavolo.jpg"
+  },
+  {
+    "id": 49,
+    "title": "Modalità Demonio",
+    "artist": "Kid Yugi",
+    "albumName":"Tutti i nomi del Diavolo",
+    "albumId":"tutti-i-nomi-del-diavolo",
+    "file": "audio/Modalitademonio.mp3",
+    "cover": "img/Tuttiinomideldiavolo.jpg"
+  },
+  {
+    "id": 50,
+    "title": "Diablo(feat.Glocky)",
+    "artist": "Kid Yugi,Glocky",
+    "albumName":"Tutti i nomi del Diavolo",
+    "albumId":"tutti-i-nomi-del-diavolo",
+    "file": "audio/Diablo.mp3",
+    "cover": "img/Tuttiinomideldiavolo.jpg"
+  },
+  {
+    "id": 51,
+    "title": "Loki",
+    "artist": "Kid Yugi",
+    "albumName":"Tutti i nomi del Diavolo",
+    "albumId":"tutti-i-nomi-del-diavolo",
+    "file": "audio/Loki.mp3",
+    "cover": "img/Tuttiinomideldiavolo.jpg"
+  },
+  {
+    "id": 52,
+    "title": "Ex Angelo-Original Version",
+    "artist": "Kid Yugi",
+    "albumName":"Tutti i nomi del Diavolo",
+    "albumId":"tutti-i-nomi-del-diavolo",
+    "file": "audio/Exangelonofeat.mp3",
+    "cover": "img/Tuttiinomideldiavolo.jpg"
+  },
+  {
+    "id": 53,
+    "title": "64 BARRE DA CENSURA",
+    "artist": "Kid Yugi",
+    "albumName":"Tutti i nomi del Diavolo",
+    "albumId":"tutti-i-nomi-del-diavolo",
+    "file": "audio/64barre.mp3",
+    "cover": "img/Tuttiinomideldiavolo.jpg"
+  },
+  {
+    "id": 54,
+    "title": "L'Anticristo",
+    "artist": "Kid Yugi",
+    "albumName":"Tutti i nomi del Diavolo",
+    "albumId":"tutti-i-nomi-del-diavolo",
+    "file": "audio/Lanticristo.mp3",
+    "cover": "img/Tuttiinomideldiavolo.jpg"
+  },
+  {
+    "id": 55,
+    "title": "Capra a tre teste(feat. Tony Boy, Artie Five)",
+    "artist": "Kid Yugi, Tony Boy, Artie Five",
+    "albumName":"Tutti i nomi del Diavolo",
+    "albumId":"tutti-i-nomi-del-diavolo",
+    "file": "audio/Capraatreteste.mp3",
+    "cover": "img/Tuttiinomideldiavolo.jpg"
+  },
+  {
+    "id": 56,
+    "title": "Eva",
+    "artist": "Kid Yugi",
+    "albumName":"Tutti i nomi del Diavolo",
+    "albumId":"tutti-i-nomi-del-diavolo",
+    "file": "audio/Eva.mp3",
+    "cover": "img/Tuttiinomideldiavolo.jpg"
+  },
+  {
+    "id": 57,
+    "title": "Servizio(feat. Papa V, Noyz Narcos",
+    "artist": "Kid Yugi, Papa V, Noyz Narcos",
+    "albumName":"Tutti i nomi del Diavolo",
+    "albumId":"tutti-i-nomi-del-diavolo",
+    "file": "audio/Servizio.mp3",
+    "cover": "img/Tuttiinomideldiavolo.jpg"
+  },
+  {
+    "id": 58,
+    "title": "Il Signore delle Mosche",
+    "artist": "Kid Yugi",
+    "albumName":"Tutti i nomi del Diavolo",
+    "albumId":"tutti-i-nomi-del-diavolo",
+    "file": "audio/Ilsignoredellemosche.mp3",
+    "cover": "img/Tuttiinomideldiavolo.jpg"
+  },
+  {
+    "id": 59,
+    "title": "Lilith",
+    "artist": "Kid Yugi",
+    "albumName":"Tutti i nomi del Diavolo",
+    "albumId":"tutti-i-nomi-del-diavolo",
+    "file": "audio/Lilith.mp3",
+    "cover": "img/Tuttiinomideldiavolo.jpg"
+  },
+  {
+    "id": 60,
+    "title": "Nemico(feat. Ernia)",
+    "artist": "Kid Yugi, Ernia",
+    "albumName":"Tutti i nomi del Diavolo",
+    "albumId":"tutti-i-nomi-del-diavolo",
+    "file": "audio/Nemico.mp3",
+    "cover": "img/Tuttiinomideldiavolo.jpg"
+  },
+  {
+    "id": 61,
+    "title": "Denaro(feat. Simba La Rue)",
+    "artist": "Kid Yugi, Simba La Rue",
+    "albumName":"Tutti i nomi del Diavolo",
+    "albumId":"tutti-i-nomi-del-diavolo",
+    "file": "audio/Denaro.mp3",
+    "cover": "img/Tuttiinomideldiavolo.jpg"
+  },
+  {
+    "id": 62,
+    "title": "Yung 3p 4",
+    "artist": "Kid Yugi",
+    "albumName":"Tutti i nomi del Diavolo",
+    "albumId":"tutti-i-nomi-del-diavolo",
+    "file": "audio/Yung3p4.mp3",
+    "cover": "img/Tuttiinomideldiavolo.jpg"
+  },
+  {
+    "id": 63,
+    "title": "Terr1(feat. Geolier)",
+    "artist": "Kid Yugi, Geolier",
+    "albumName":"Tutti i nomi del Diavolo",
+    "albumId":"tutti-i-nomi-del-diavolo",
+    "file": "audio/Terr1.mp3",
+    "cover": "img/Tuttiinomideldiavolo.jpg"
+  },
+  {
+    "id": 64,
+    "title": "llva(Fume scure rmx) (feat. Fido Guido)",
+    "artist": "Kid Yugi, Fido Guido",
+    "albumName":"Tutti i nomi del Diavolo",
+    "albumId":"tutti-i-nomi-del-diavolo",
+    "file": "audio/llva.mp3",
+    "cover": "img/Tuttiinomideldiavolo.jpg"
+  },
+  {
+    "id": 65,
+    "title": "Paganini",
+    "artist": "Kid Yugi",
+    "albumName":"Tutti i nomi del Diavolo",
+    "albumId":"tutti-i-nomi-del-diavolo",
+    "file": "audio/Paganini.mp3",
+    "cover": "img/Tuttiinomideldiavolo.jpg"
+  },
+  {
+    "id": 66,
+    "title": "Ex Angelo(feat. Sfera Ebbasta)",
+    "artist": "Kid Yugi, Sfera Ebbasta",
+    "albumName":"Tutti i nomi del Diavolo",
+    "albumId":"tutti-i-nomi-del-diavolo",
+    "file": "audio/Exangelo.mp3",
+    "cover": "img/Tuttiinomideldiavolo.jpg"
+  },
+  {
+    "id": 67,
+    "title": "Lucifero",
+    "artist": "Kid Yugi",
+    "albumName":"Tutti i nomi del Diavolo",
+    "albumId":"tutti-i-nomi-del-diavolo",
+    "file": "audio/Lucifero.mp3",
+    "cover": "img/Tuttiinomideldiavolo.jpg"
+  },
+  {
+    "id": 68,
+    "title": "Berserker",
+    "artist": "Kid Yugi",
+    "albumName":"",
+    "albumId":"",
+    "file": "audio/Berserker.mp3",
+    "cover": "img/berserker.jpg"
   }
+
 
 ]
