@@ -21,15 +21,17 @@
         <div class="album-text">
             <h2>Creato per Moriz Ciancio</h2>
         </div>
-        <div class="orizzontal-bar"> <a href="TuttaVita.html"> <img src="img/tutta-vita.jpg" class="cover">
+        <div class="orizzontal-bar"> <a href="album.html?album=tutta-vita"> <img src="img/tutta-vita.jpg" class="cover">
                 <div class="info"> <span class="title">Tutta Vita,</span> <span class="name">Olly</span> </div>
             </a>
-            <div> <img src="img/anima-nera.jpeg" class="cover">
+            <div> 
+                <a href="album.html?album=anima-nera">"<img src="img/anima-nera.jpeg" class="cover">
                 <div class="info"> <span class="title">Anima Nera</span> <span class="name">Il Tre</span> </div>
-            </div>
-            <div> <img src="img/locura.jpg" class="cover">
+            </div></a>
+            <div> 
+                <a href="album.html?album=locura"><img src="img/locura.jpg" class="cover">
                 <div class="info"> <span class="title">Locura,</span> <span class="name">Lazza</span> </div>
-            </div>
+            </div></a>
         </div>
         <div class="album-text">
             <h2>Stazioni radio più popolari</h2>
@@ -286,6 +288,7 @@
             background: white;
             transition: width 0.1s;
         }
+
         .footer {
             position: fixed;
             bottom: 0;
@@ -326,7 +329,7 @@
         const progress = document.querySelector(".progress");
 
         const songs = [
-            { title: "Buio Davanti", file: "audio/Lazza - BUIO DAVANTI (Visual).mp3", cover: "img/buio-davanti1.jpg", artist: "Lazza" },
+            { title: "Buio Davanti", file: "audio/Buiodavanti.mp3", cover: "img/buio-davanti1.jpg", artist: "Lazza" },
             { title: "Fellini", file: "audio/Ernia, Kid Yugi - FELLINI (Visual).mp3", cover: "img/Fellini.jpg", artist: "Ernia, Kid Yugi" },
             { title: "Kabuki", file: "audio/Kabuki.mp3", cover: "img/kabuki.jpg", artist: "Kid Yugi" },
         ];
