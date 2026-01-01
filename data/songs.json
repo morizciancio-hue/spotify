@@ -1,15 +1,11 @@
 [
-  {
-    "id": 1,
-    "title": "Buio Davanti",
-    "artist": "Lazza",
-    "file": "audio/Lazza - BUIO DAVANTI (Visual).mp3",
-    "cover": "img/buio-davanti1.jpg"
-  },
+  
   {
     "id": 2,
     "title": "Fellini",
     "artist": "Ernia, Kid Yugi",
+    "albumName":"",
+    "albumId":"",
     "file": "audio/Ernia, Kid Yugi - FELLINI (Visual).mp3",
     "cover": "img/Fellini.jpg"
   },
@@ -18,7 +14,8 @@
      "id": 3,
     "title": "A noi non serve far l'amore",
     "artist": "Olly",
-    "album": "Tutta-Vita",
+    "albumId":"tutta-vita",
+    "albumName": "Tutta-Vita",
     "file": "audio/Anoinonservefarlamore.mp3",
     "cover": "img/tutta-vita.jpg"
     
@@ -28,8 +25,9 @@
      "id": 4,
     "title": "É festa",
     "artist": "Olly",
-    "album": "Tutta-Vita",
-    "file": "audio/É festa.mp3",
+    "albumId":"tutta-vita",
+    "albumName":"Tutta-Vita",
+    "file": "audio/e-festa.mp3",
     "cover": "img/tutta-vita.jpg"
     
 
@@ -38,7 +36,8 @@
      "id": 5,
     "title": "I cantieri del Giappone",
     "artist": "Olly",
-    "album": "Tutta-Vita",
+    "albumId":"tutta-vita",
+    "albumName": "Tutta-Vita",
     "file": "audio/Icantieridelgiappone.mp3",
     "cover": "img/tutta-vita.jpg"
     
@@ -48,7 +47,8 @@
      "id": 6,
     "title": "Per due come noi",
     "artist": "Olly",
-    "album": "Tutta-Vita",
+    "albumId":"tutta-vita",
+    "albumName": "Tutta-Vita",
     "file": "audio/Perduecomenoi.mp3",
     "cover": "img/tutta-vita.jpg"
     
@@ -58,7 +58,8 @@
      "id": 7,
     "title": "Quei ricordi là",
     "artist": "Olly",
-    "album": "Tutta-Vita",
+    "albumId":"tutta-vita",
+    "albumName": "Tutta-Vita",
     "file": "audio/Queiricordila.mp3",
     "cover": "img/tutta-vita.jpg"
     
@@ -68,7 +69,8 @@
      "id": 8,
     "title": "Noi che",
     "artist": "Olly",
-    "album": "Tutta-Vita",
+    "albumId":"tutta-vita",
+    "albumName": "Tutta-Vita",
     "file": "audio/Noiche.mp3",
     "cover": "img/tutta-vita.jpg"
     
@@ -78,7 +80,8 @@
      "id": 9,
     "title": "Devastante",
     "artist": "Olly",
-    "album": "Tutta-Vita",
+    "albumId":"tutta-vita",
+    "albumName": "Tutta-Vita",
     "file": "audio/Devastante.mp3",
     "cover": "img/tutta-vita.jpg"
     
@@ -88,7 +91,8 @@
      "id": 10,
     "title": "Sopra la stessa barca",
     "artist": "Olly",
-    "album": "Tutta-Vita",
+    "albumId":"tutta-vita",
+    "albumName": "Tutta-Vita",
     "file": "audio/Sopralastessabarca.mp3",
     "cover": "img/tutta-vita.jpg"
     
@@ -98,7 +102,8 @@
      "id": 11,
     "title": "La lavatrice si è rotta",
     "artist": "Olly",
-    "album": "Tutta-Vita",
+    "albumId":"tutta-vita",
+    "albumName": "Tutta-Vita",
     "file": "audio/Lalavatricesierotta.mp3",
     "cover": "img/tutta-vita.jpg"
     
@@ -108,7 +113,8 @@
      "id": 12,
     "title": "Scarabocchi",
     "artist": "Olly",
-    "album": "Tutta-Vita",
+    "albumId":"tutta-vita",
+    "albumName": "Tutta-Vita",
     "file": "audio/Scarabocchi.mp3",
     "cover": "img/tutta-vita.jpg"
     
@@ -118,7 +124,8 @@
      "id": 13,
     "title": "A squarciagola",
     "artist": "Olly",
-    "album": "Tutta-Vita",
+    "albumId":"tutta-vita",
+    "albumName": "Tutta-Vita",
     "file": "audio/Asquarciagola.mp3",
     "cover": "img/tutta-vita.jpg"
     
@@ -128,7 +135,8 @@
      "id": 14,
     "title": "Il campione",
     "artist": "Olly",
-    "album": "Tutta-Vita",
+    "albumId":"tutta-vita",
+    "albumName": "Tutta-Vita",
     "file": "audio/Ilcampione.mp3",
     "cover": "img/tutta-vita.jpg"
     
@@ -138,7 +146,8 @@
      "id": 15,
     "title": "Depresso fortunato",
     "artist": "Olly",
-    "album": "Tutta-Vita",
+    "albumId":"tutta-vita",
+    "albumName": "Tutta-Vita",
     "file": "audio/Depressofortunato.mp3",
     "cover": "img/tutta-vita.jpg"
     
@@ -148,11 +157,293 @@
      "id": 16,
     "title": "Questa domenica",
     "artist": "Olly",
-    "album": "Tutta-Vita",
+    "albumId":"tutta-vita",
+    "albumName": "Tutta-Vita",
     "file": "audio/Questadomenica.mp3",
     "cover": "img/tutta-vita.jpg"
     
 
+  },
+  {
+     "id": 17,
+    "title": "NOVEUNOUNO",
+    "artist": "Il Tre",
+    "albumId":"anima-nera",
+    "albumName": "Anima-Nera",
+    "file": "audio/Noveunouno.mp3",
+    "cover": "img/anima-nera.jpeg"
+    
+
+  },
+  {
+     "id": 18,
+    "title": "PAURA DI ME",
+    "artist": "Il Tre",
+    "albumId":"anima-nera",
+    "albumName": "Anima-Nera",
+    "file": "audio/Pauradime.mp3",
+    "cover": "img/anima-nera.jpeg"
+    
+
+  },
+  {
+     "id": 19,
+    "title": "ANIMA NERA",
+    "artist": "Il Tre",
+    "albumId":"anima-nera",
+    "albumName": "Anima-Nera",
+    "file": "audio/Animanera.mp3",
+    "cover": "img/anima-nera.jpeg"
+    
+
+  },
+  {
+     "id": 20,
+    "title": "LITORALE",
+    "artist": "Il Tre",
+    "albumId":"anima-nera",
+    "albumName": "Anima-Nera",
+    "file": "audio/Litorale.mp3",
+    "cover": "img/anima-nera.jpeg"
+    
+
+  },
+  {
+     "id": 21,
+    "title": "VIA MARINA",
+    "artist": "Il Tre",
+    "albumId":"anima-nera",
+    "albumName": "Anima-Nera",
+    "file": "audio/Viamarina.mp3",
+    "cover": "img/anima-nera.jpeg"
+    
+
+  },
+  {
+     "id": 22,
+    "title": "SUI BORDI",
+    "artist": "Il Tre",
+    "albumId":"anima-nera",
+    "albumName": "Anima-Nera",
+    "file": "audio/Suibordi.mp3",
+    "cover": "img/anima-nera.jpeg"
+    
+
+  },
+  {
+     "id": 23,
+    "title": "FELPA XL",
+    "artist": "Il Tre",
+    "albumId":"anima-nera",
+    "albumName": "Anima-Nera",
+    "file": "audio/FelpaXL.mp3",
+    "cover": "img/anima-nera.jpeg"
+    
+
+  },
+  {
+     "id": 24,
+    "title": "FRANCESCA",
+    "artist": "Il Tre",
+    "albumId":"anima-nera",
+    "albumName": "Anima-Nera",
+    "file": "audio/Francesca.mp3",
+    "cover": "img/anima-nera.jpeg"
+    
+
+  },
+  {
+     "id": 25,
+    "title": "INCHIOSTRO BLU",
+    "artist": "Il Tre",
+    "albumId":"anima-nera",
+    "albumName": "Anima-Nera",
+    "file": "audio/Inchiostroblu.mp3",
+    "cover": "img/anima-nera.jpeg"
+    
+
+  },
+  {
+     "id": 26,
+    "title": "T'IMMAGINO",
+    "artist": "Il Tre",
+    "albumId":"anima-nera",
+    "albumName": "Anima-Nera",
+    "file": "audio/timmagino.mp3",
+    "cover": "img/anima-nera.jpeg"
+    
+
+  },
+  {
+     "id": 27,
+    "title": "#31#",
+    "artist": "Il Tre",
+    "albumId":"anima-nera",
+    "albumName": "Anima-Nera",
+    "file": "audio/Trentuno.mp3",
+    "cover": "img/anima-nera.jpeg"
+  },
+  {
+     "id": 28,
+    "title": "OuverFOURe",
+    "artist": "Lazza",
+    "albumId":"locura",
+    "albumName": "Locura",
+    "file": "audio/Ouverfoure.mp3",
+    "cover": "img/locura.jpg"
+  },
+   {
+     "id": 29,
+    "title": "ZERI IN PIU'",
+    "artist": "Lazza",
+    "albumId":"locura",
+    "albumName": "Locura",
+    "file": "audio/Zeriinpiu.mp3",
+    "cover": "img/locura.jpg"
+  },
+   {
+     "id": 30,
+    "title": "ABITUDINE",
+    "artist": "Lazza",
+    "albumId":"locura",
+    "albumName": "Locura",
+    "file": "audio/Abitudine.mp3",
+    "cover": "img/locura.jpg"
+  },
+   {
+     "id": 31,
+    "title": "FENTANYL",
+    "artist": "Lazza",
+    "albumId":"locura",
+    "albumName": "Locura",
+    "file": "audio/Fentanyl.mp3",
+    "cover": "img/locura.jpg"
+  },
+   {
+     "id": 32,
+    "title": "CERTE COSE",
+    "artist": "Lazza",
+    "albumId":"locura",
+    "albumName": "Locura",
+    "file": "audio/Certecose.mp3",
+    "cover": "img/locura.jpg"
+  },
+   {
+     "id": 33,
+    "title": "GHETTO SUPERSTAR",
+    "artist": "Lazza",
+    "albumId":"locura",
+    "albumName": "Locura",
+    "file": "audio/Ghettosuperstar.mp3",
+    "cover": "img/locura.jpg"
+  },
+   {
+     "id": 34,
+    "title": "MALE DA VENDERE",
+    "artist": "Lazza",
+    "albumId":"locura",
+    "albumName": "Locura",
+    "file": "audio/Maledavendere.mp3",
+    "cover": "img/locura.jpg"
+  },
+   {
+     "id": 35,
+    "title": "VERDI NEI VIOLA",
+    "artist": "Lazza",
+    "albumId":"locura",
+    "albumName": "Locura",
+    "file": "audio/Verdineiviola.mp3",
+    "cover": "img/locura.jpg"
+  },
+   {
+     "id": 36,
+    "title": "CANZONE D'ODIO",
+    "artist": "Lazza",
+    "albumId":"locura",
+    "albumName": "Locura",
+    "file": "audio/Canzonedodio.mp3",
+    "cover": "img/locura.jpg"
+  },
+   {
+     "id": 37,
+    "title": "CASANOVA",
+    "artist": "Lazza",
+    "albumId":"locura",
+    "albumName": "Locura",
+    "file": "audio/Casanova.mp3",
+    "cover": "img/locura.jpg"
+  },
+   {
+     "id": 38,
+    "title": "ESTRANEO",
+    "artist": "Lazza",
+    "albumId":"locura",
+    "albumName": "Locura",
+    "file": "audio/Estraneo.mp3",
+    "cover": "img/locura.jpg"
+  },
+   {
+     "id": 39,
+    "title": "HOT",
+    "artist": "Lazza",
+    "albumId":"locura",
+    "albumName": "Locura",
+    "file": "audio/Hot.mp3",
+    "cover": "img/locura.jpg"
+  },
+   {
+     "id": 40,
+    "title": "MEZZE VERITA'",
+    "artist": "Lazza",
+    "albumId":"locura",
+    "albumName": "Locura",
+    "file": "audio/Mezzeverita.mp3",
+    "cover": "img/locura.jpg"
+  },
+   {
+     "id": 41,
+    "title": "SAFARI",
+    "artist": "Lazza",
+    "albumId":"locura",
+    "albumName": "Locura",
+    "file": "audio/Safari.mp3",
+    "cover": "img/locura.jpg"
+  },
+   {
+     "id": 42,
+    "title": "GIORNO DA CANI",
+    "artist": "Lazza",
+    "albumId":"locura",
+    "albumName": "Locura",
+    "file": "audio/Giornodacani.mp3",
+    "cover": "img/locura.jpg"
+  },
+   {
+     "id": 43,
+    "title": "100 MESSAGGI",
+    "artist": "Lazza",
+    "albumId":"locura",
+    "albumName": "Locura",
+    "file": "audio/100Messaggi.mp3",
+    "cover": "img/locura.jpg"
+  },
+   {
+     "id": 44,
+    "title": "DOLCEVITA",
+    "artist": "Lazza",
+    "albumId":"locura",
+    "albumName": "Locura",
+    "file": "audio/Dolcevita.mp3",
+    "cover": "img/locura.jpg"
+  },
+  {
+    "id": 45,
+    "title": "BUIO DAVANTI",
+    "artist": "Lazza",
+    "albumName":"Locura",
+    "albumId":"locura",
+    "file": "audio/Buiodavanti.mp3",
+    "cover": "img/locura.jpg"
   }
 
 ]
