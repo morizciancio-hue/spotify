@@ -676,7 +676,7 @@
     "title": "Il brivido della vita",
     "artist": "Olly",
     "albumName":"TUTTA VITA(SEMPRE)",
-    "albumId":"tutti-vita-sempre",
+    "albumId":"tutta-vita-sempre",
     "file": "audio/Ilbrividodellavita.mp3",
     "cover": "img/Tuttavitasempre.jpg"
   },
@@ -701,4 +701,5 @@
     "cover": "img/Tuttavitasempre.jpg"
   }
 ]
+
 
