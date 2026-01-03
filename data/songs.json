@@ -699,8 +699,167 @@
     "albumId":"tutta-vita-sempre",
     "file": "audio/Buontrasloco.mp3",
     "cover": "img/Tuttavitasempre.jpg"
+  },
+   {
+    "id": 74,
+    "title": "INTRO(La Bella Vita)",
+    "artist": "Artie 5ive",
+    "albumName":"LA BELLAVITA",
+    "albumId":"la-bellavita",
+    "file": "audio/INTRO.mp3",
+    "cover": "img/Labellavita.jpg"
+  },
+  {
+    "id": 75,
+    "title": "MONTECARLO",
+    "artist": "Artie 5ive",
+    "albumName":"LA BELLAVITA",
+    "albumId":"la-bellavita",
+    "file": "audio/Montecarlo.mp3",
+    "cover": "img/Labellavita.jpg"
+  },
+  {
+    "id": 76,
+    "title": "BRAZY(feat. Tony Boy)",
+    "artist": "Artie 5ive, Tony Boy",
+    "albumName":"LA BELLAVITA",
+    "albumId":"la-bellavita",
+    "file": "audio/Brazy.mp3",
+    "cover": "img/Labellavita.jpg"
+  },
+  {
+    "id": 77,
+    "title": "OGNI AMICO MIO",
+    "artist": "Artie 5ive",
+    "albumName":"LA BELLAVITA",
+    "albumId":"la-bellavita",
+    "file": "audio/Ogniamicomio.mp3",
+    "cover": "img/Labellavita.jpg"
+  },
+  {
+    "id": 78,
+    "title": "SOGNO AMERICANO",
+    "artist": "Artie 5ive",
+    "albumName":"LA BELLAVITA",
+    "albumId":"la-bellavita",
+    "file": "audio/Sognoamericano.mp3",
+    "cover": "img/Labellavita.jpg"
+  },
+  {
+    "id": 79,
+    "title": "FW/SS25(Freestyle)",
+    "artist": "Artie 5ive",
+    "albumName":"LA BELLAVITA",
+    "albumId":"la-bellavita",
+    "file": "audio/FWSS25.mp3",
+    "cover": "img/Labellavita.jpg"
+  },
+  {
+    "id": 80,
+    "title": "Tu",
+    "artist": "Artie 5ive",
+    "albumName":"LA BELLAVITA",
+    "albumId":"la-bellavita",
+    "file": "audio/Tu.mp3",
+    "cover": "img/Labellavita.jpg"
+  },
+  {
+    "id": 81,
+    "title": "ARE U CRAZY?(feat. Capo Plaza)",
+    "artist": "Artie 5ive, Capo Plaza",
+    "albumName":"LA BELLAVITA",
+    "albumId":"la-bellavita",
+    "file": "audio/Areucrazy.mp3",
+    "cover": "img/Labellavita.jpg"
+  },
+  {
+    "id": 82,
+    "title": "DODGE DURANGO",
+    "artist": "Artie 5ive",
+    "albumName":"LA BELLAVITA",
+    "albumId":"la-bellavita",
+    "file": "audio/Dodgedurango.mp3",
+    "cover": "img/Labellavita.jpg"
+  },
+  {
+    "id": 83,
+    "title": "LITORALE(feat. Guè)",
+    "artist": "Artie 5ive, Guè",
+    "albumName":"LA BELLAVITA",
+    "albumId":"la-bellavita",
+    "file": "audio/Litorale1.mp3",
+    "cover": "img/Labellavita.jpg"
+  },
+  {
+    "id": 84,
+    "title": "DAVVERODAVVERO",
+    "artist": "Artie 5ive",
+    "albumName":"LA BELLAVITA",
+    "albumId":"la-bellavita",
+    "file": "audio/Davverodavvero.mp3",
+    "cover": "img/Labellavita.jpg"
+  },
+  {
+    "id": 85,
+    "title": "MILANO A FERRAGOSTO",
+    "artist": "Artie 5ive",
+    "albumName":"LA BELLAVITA",
+    "albumId":"la-bellavita",
+    "file": "audio/Milanoaferragosto.mp3",
+    "cover": "img/Labellavita.jpg"
+  },
+  {
+    "id": 86,
+    "title": "PIETÀ(feat. Kid Yugi)",
+    "artist": "Artie 5ive, Kid Yugi",
+    "albumName":"LA BELLAVITA",
+    "albumId":"la-bellavita",
+    "file": "audio/Pieta.mp3",
+    "cover": "img/Labellavita.jpg"
+  },
+  {
+    "id": 87,
+    "title": "MAMA",
+    "artist": "Artie 5ive",
+    "albumName":"LA BELLAVITA",
+    "albumId":"la-bellavita",
+    "file": "audio/Mama.mp3",
+    "cover": "img/Labellavita.jpg"
+  },
+  {
+    "id":88,
+    "title": "I GOT 2 GO (OUTRO)",
+    "artist": "Artie 5ive",
+    "albumName":"LA BELLAVITA",
+    "albumId":"la-bellavita",
+    "file": "audio/Igot2go.mp3",
+    "cover": "img/Labellavita.jpg"
+  },
+  {
+    "id": 89,
+    "title": "MILANO TESTAROSSA (feat. Guè)",
+    "artist": "Artie 5ive, Guè",
+    "albumName":"LA BELLAVITA",
+    "albumId":"la-bellavita",
+    "file": "audio/Milanotestarossa.mp3",
+    "cover": "img/Labellavita.jpg"
+  },
+  {
+    "id": 90,
+    "title": "BAMBOLA (feat. Niky Savage)",
+    "artist": "Artie 5ive, Niky Savage",
+    "albumName":"LA BELLAVITA",
+    "albumId":"la-bellavita",
+    "file": "audio/Bambola.mp3",
+    "cover": "img/Labellavita.jpg"
+  },
+  {
+    "id": 91,
+    "title": "00",
+    "artist": "Artie 5ive",
+    "albumName":"LA BELLAVITA",
+    "albumId":"la-bellavita",
+    "file": "audio/00.mp3",
+    "cover": "img/Labellavita.jpg"
   }
 ]
-
-
-
