@@ -707,7 +707,7 @@
     "albumName":"LA BELLAVITA",
     "albumId":"la-bellavita",
     "file": "audio/INTRO.mp3",
-    "cover": "img/Labellavita.jpg"
+    "cover": "img/Labellavita.webp"
   },
   {
     "id": 75,
@@ -716,7 +716,7 @@
     "albumName":"LA BELLAVITA",
     "albumId":"la-bellavita",
     "file": "audio/Montecarlo.mp3",
-    "cover": "img/Labellavita.jpg"
+    "cover": "img/Labellavita.webp"
   },
   {
     "id": 76,
@@ -725,7 +725,7 @@
     "albumName":"LA BELLAVITA",
     "albumId":"la-bellavita",
     "file": "audio/Brazy.mp3",
-    "cover": "img/Labellavita.jpg"
+    "cover": "img/Labellavita.webp"
   },
   {
     "id": 77,
@@ -734,7 +734,7 @@
     "albumName":"LA BELLAVITA",
     "albumId":"la-bellavita",
     "file": "audio/Ogniamicomio.mp3",
-    "cover": "img/Labellavita.jpg"
+    "cover": "img/Labellavita.webp"
   },
   {
     "id": 78,
@@ -743,7 +743,7 @@
     "albumName":"LA BELLAVITA",
     "albumId":"la-bellavita",
     "file": "audio/Sognoamericano.mp3",
-    "cover": "img/Labellavita.jpg"
+    "cover": "img/Labellavita.webp"
   },
   {
     "id": 79,
@@ -752,7 +752,7 @@
     "albumName":"LA BELLAVITA",
     "albumId":"la-bellavita",
     "file": "audio/FWSS25.mp3",
-    "cover": "img/Labellavita.jpg"
+    "cover": "img/Labellavita.webp"
   },
   {
     "id": 80,
@@ -761,7 +761,7 @@
     "albumName":"LA BELLAVITA",
     "albumId":"la-bellavita",
     "file": "audio/Tu.mp3",
-    "cover": "img/Labellavita.jpg"
+    "cover": "img/Labellavita.webp"
   },
   {
     "id": 81,
@@ -770,7 +770,7 @@
     "albumName":"LA BELLAVITA",
     "albumId":"la-bellavita",
     "file": "audio/Areucrazy.mp3",
-    "cover": "img/Labellavita.jpg"
+    "cover": "img/Labellavita.webp"
   },
   {
     "id": 82,
@@ -779,7 +779,7 @@
     "albumName":"LA BELLAVITA",
     "albumId":"la-bellavita",
     "file": "audio/Dodgedurango.mp3",
-    "cover": "img/Labellavita.jpg"
+    "cover": "img/Labellavita.webp"
   },
   {
     "id": 83,
@@ -788,7 +788,7 @@
     "albumName":"LA BELLAVITA",
     "albumId":"la-bellavita",
     "file": "audio/Litorale1.mp3",
-    "cover": "img/Labellavita.jpg"
+    "cover": "img/Labellavita.webp"
   },
   {
     "id": 84,
@@ -797,7 +797,7 @@
     "albumName":"LA BELLAVITA",
     "albumId":"la-bellavita",
     "file": "audio/Davverodavvero.mp3",
-    "cover": "img/Labellavita.jpg"
+    "cover": "img/Labellavita.webp"
   },
   {
     "id": 85,
@@ -806,7 +806,7 @@
     "albumName":"LA BELLAVITA",
     "albumId":"la-bellavita",
     "file": "audio/Milanoaferragosto.mp3",
-    "cover": "img/Labellavita.jpg"
+    "cover": "img/Labellavita.webp"
   },
   {
     "id": 86,
@@ -815,7 +815,7 @@
     "albumName":"LA BELLAVITA",
     "albumId":"la-bellavita",
     "file": "audio/Pieta.mp3",
-    "cover": "img/Labellavita.jpg"
+    "cover": "img/Labellavita.webp"
   },
   {
     "id": 87,
@@ -824,7 +824,7 @@
     "albumName":"LA BELLAVITA",
     "albumId":"la-bellavita",
     "file": "audio/Mama.mp3",
-    "cover": "img/Labellavita.jpg"
+    "cover": "img/Labellavita.webp"
   },
   {
     "id":88,
@@ -833,7 +833,7 @@
     "albumName":"LA BELLAVITA",
     "albumId":"la-bellavita",
     "file": "audio/Igot2go.mp3",
-    "cover": "img/Labellavita.jpg"
+    "cover": "img/Labellavita.webp"
   },
   {
     "id": 89,
@@ -842,7 +842,7 @@
     "albumName":"LA BELLAVITA",
     "albumId":"la-bellavita",
     "file": "audio/Milanotestarossa.mp3",
-    "cover": "img/Labellavita.jpg"
+    "cover": "img/Labellavita.webp"
   },
   {
     "id": 90,
@@ -851,7 +851,7 @@
     "albumName":"LA BELLAVITA",
     "albumId":"la-bellavita",
     "file": "audio/Bambola.mp3",
-    "cover": "img/Labellavita.jpg"
+    "cover": "img/Labellavita.webp"
   },
   {
     "id": 91,
@@ -860,6 +860,6 @@
     "albumName":"LA BELLAVITA",
     "albumId":"la-bellavita",
     "file": "audio/00.mp3",
-    "cover": "img/Labellavita.jpg"
+    "cover": "img/Labellavita.webp"
   }
 ]
