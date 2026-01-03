@@ -651,7 +651,54 @@
     "albumId":"",
     "file": "audio/Berserker.mp3",
     "cover": "img/berserker.jpg"
+  },
+  {
+    "id": 69,
+    "title": "Occhi color mare",
+    "artist": "Olly",
+    "albumName":"TUTTA VITA(SEMPRE)",
+    "albumId":"tutta-vita-sempre",
+    "file": "audio/Occhicolormare.mp3",
+    "cover": "img/Tuttavitasempre.jpg"
+  },
+  
+  {
+    "id": 70,
+    "title": "Come noi non c'è nessuno",
+    "artist": "Olly",
+    "albumName":"TUTTA VITA(SEMPRE)",
+    "albumId":"tutta-vita-sempre",
+    "file": "audio/Comenoinoncenessuno.mp3",
+    "cover": "img/Tuttavitasempre.jpg"
+  },
+  {
+    "id": 71,
+    "title": "Il brivido della vita",
+    "artist": "Olly",
+    "albumName":"TUTTA VITA(SEMPRE)",
+    "albumId":"tutti-vita-sempre",
+    "file": "audio/Ilbrividodellavita.mp3",
+    "cover": "img/Tuttavitasempre.jpg"
+  },
+  
+  {
+    "id": 72,
+    "title": "Cosí cosí",
+    "artist": "Olly",
+    "albumName":"TUTTA VITA(SEMPRE)",
+    "albumId":"tutta-vita-sempre",
+    "file": "audio/Cosicosi.mp3",
+    "cover": "img/Tuttavitasempre.jpg"
+  },
+
+  {
+    "id": 73,
+    "title": "Buon trasloco",
+    "artist": "Olly",
+    "albumName":"TUTTA VITA(SEMPRE)",
+    "albumId":"tutta-vita-sempre",
+    "file": "audio/Buontrasloco.mp3",
+    "cover": "img/Tuttavitasempre.jpg"
   }
-
-
 ]
+
